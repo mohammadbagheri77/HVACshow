@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Pro_TSHP\\hvacshow\\hvacshow\\hvacshow.csproj": {}
+    "E:\\Pro_TSHP\\hvac_show\\hvacshow\\hvacshow.csproj": {}
   },
   "projects": {
-    "E:\\Pro_TSHP\\hvacshow\\hvacshow\\hvacshow.csproj": {
+    "E:\\Pro_TSHP\\hvac_show\\hvacshow\\hvacshow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Pro_TSHP\\hvacshow\\hvacshow\\hvacshow.csproj",
+        "projectUniqueName": "E:\\Pro_TSHP\\hvac_show\\hvacshow\\hvacshow.csproj",
         "projectName": "hvacshow",
-        "projectPath": "E:\\Pro_TSHP\\hvacshow\\hvacshow\\hvacshow.csproj",
+        "projectPath": "E:\\Pro_TSHP\\hvac_show\\hvacshow\\hvacshow.csproj",
         "packagesPath": "C:\\Users\\mohammad\\.nuget\\packages\\",
-        "outputPath": "E:\\Pro_TSHP\\hvacshow\\hvacshow\\obj\\",
+        "outputPath": "E:\\Pro_TSHP\\hvac_show\\hvacshow\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -1677,12 +1677,13 @@
 </div>
 <!-- End Enable Product -->
 
-
-<script>
+@section Scripts{
+    <script>
         $("body").on("click", ".popover", function () {
             setTimeout(function () {
                 var thisVal = $("#change-date-modal").find("#input1").val();
                 $("#change-date-modal").find(".prd-date-time").text(thisVal);
             })
         });
-</script>
+    </script>
+    }
