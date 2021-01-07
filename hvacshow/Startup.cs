@@ -1,6 +1,9 @@
+using hvacshow.Models.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -25,6 +28,15 @@ namespace hvacshow
         {
             services.AddControllersWithViews()
              .AddRazorRuntimeCompilation();
+
+            services.AddDbContextPool<AppDbContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("SqlServer"));
+            });
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+              .AddEntityFrameworkStores<AppDbContext>()
+              .AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +57,7 @@ namespace hvacshow
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -68,10 +81,9 @@ namespace hvacshow
 
                     name: "",
                     pattern: "{area:exists}/{controller}/{action}/");
+ /* 
 
-
-
-                /*           endpoints.MapControllerRoute(
+                         endpoints.MapControllerRoute(
                         name: "MyArea",
                         pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
                 */

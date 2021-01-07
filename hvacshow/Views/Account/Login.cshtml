@@ -1,0 +1,67 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="login-left col-md-4 col-sm-12 col-xs-12">
+    <div class="inner-login-left col-xs-12 no-padding section-shadow section-white section-border">
+        <div class="col-xs-12">
+            <!-- Title -->
+            <div class="section-title">
+                <h1>
+                    ورود
+                </h1>
+            </div>
+            <!-- End Title -->
+            <div class="col-xs-12 no-padding">
+                <form  asp-action="Login" asp-controller="Account" method="post"  class="login-form"   >
+
+                    <div>
+                        <input asp-for="UserName" class="hs-input" placeholder="نام کاربری" required>
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+
+                    <div>
+                        <input asp-for="Password" class="hs-input" placeholder="رمز عبور" required>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                        <br />
+                        <span class="forgot-pw">
+                            فراموشی رمز عبور
+                        </span>
+                    </div>
+
+                    <div asp-validation-summary="ModelOnly"></div>
+                   
+                    <div>
+                        <button class="btn custom-btn-danger" type="submit">ورود</button>
+                    </div>
+
+                    <div>
+                        <a asp-action="Register" asp-controller="Account" class="btn custom-btn-primary " style="width: 100%;">ثبت نام</a>
+                    </div>
+
+                </form>
+
+                <form action="" method="post" class="reset-form" autocomplete="off"  novalidate>
+                    <span class="back-login">
+                        بازگشت
+                    </span>
+                    <div>
+                        <input type="number" class="hs-input" placeholder="شماره موبایل">
+                    </div>
+                    <div>
+                        <button class="btn custom-btn-danger">
+                            ارسال رمز عبور جدید
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
