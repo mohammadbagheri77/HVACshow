@@ -1,0 +1,1 @@
+var ClipboardDemo={init:function(){new Clipboard("[data-clipboard=true]").on("success",function(e){e.clearSelection(),alert("کپی یا کات انجام شد!")})}};jQuery(document).ready(function(){ClipboardDemo.init()});

@@ -1,0 +1,398 @@
+﻿@{
+    ViewData["Title"] = "addAdmin";
+    Layout = "~/Areas/Company/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="m-grid__item m-grid__item--fluid m-wrapper">
+
+    <!-- BEGIN: Subheader -->
+    <div class="m-grid__item m-grid__item--fluid m-wrapper">
+
+        <!-- BEGIN: Subheader -->
+        <div class="m-subheader ">
+            <div class="d-flex align-items-center">
+                <div class="mr-auto">
+                    <h3 class="m-subheader__title display-inline-block ml-0 pl-0">داشبورد</h3>
+                    <ul class="m-subheader__breadcrumbs m-nav m-nav--inline display-inline-block">
+                        <li class="m-nav__separator">
+                            -
+                        </li>
+                        <li class="m-nav__item">
+                            <a href="javascript:void(0)" class="m-nav__link">
+                                <span class="m-nav__link-text">
+                                    تنظیمات
+                                </span>
+                            </a>
+                        </li>
+                        <li class="m-nav__separator">
+                            -
+                        </li>
+                        <li class="m-nav__item">
+                            <a href="javascript:void(0)" class="m-nav__link">
+                                <span class="m-nav__link-text">
+                                    تنظیمات کاربری
+                                </span>
+                            </a>
+                        </li>
+                        <li class="m-nav__separator">
+                            -
+                        </li>
+                        <li class="m-nav__item">
+                            <a href="" class="m-nav__link">
+                                <span class="m-nav__link-text">
+                                    افزودن ادمین
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="m-subheader__daterange">
+                        &nbsp;
+                        17 آذر
+                        &nbsp;<a href="#" class="btn btn-sm btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+                            <i class="la la-calendar"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- END: Subheader -->
+        <div class="m-content add-admin-content">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="m-portlet m-portlet--full-height  ">
+                        <div class="m-portlet__body">
+                            <div class="m-card-profile">
+                                <div class="m-card-profile__pic">
+                                    <div class="m-card-profile__pic-wrapper">
+                                        <img src="~/Company/assets/app/media/img/users/user4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="m-section__content container-fluid text-center">
+                                    <button class="btn btn-brand btn-sm" data-target="#uploader" data-toggle="modal">انتخاب عکس</button>
+                                </div>
+                                <!--<div class="m-card-profile__details">
+                                        <span class="m-card-profile__name">
+                                        ادمین عمده داران
+                                        </span>
+                                </div>-->
+                                <!--<div class="m-widget1">
+                                    <div class="m-widget1__item">
+                                        <div class="row m-row&#45;&#45;no-padding align-items-center">
+                                            <div class="col">
+                                                <h3 class="m-widget1__title text-right tshfontsize3"><i class="m-menu__link-icon flaticon-email tshfontsize3"></i>
+                                                    ایمیل:
+                                                </h3>
+                                                &lt;!&ndash;<span class="m-widget1__desc">میانگین درآمد هفتگی</span>&ndash;&gt;
+                                            </div>
+                                            <div class="col m&#45;&#45;align-right">
+                                                <span class="m-widget1__number m&#45;&#45;font-brand tshfontsize3">test@test.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-widget1__item">
+                                        <div class="row m-row&#45;&#45;no-padding align-items-center">
+                                            <div class="col">
+                                                <h3 class="m-widget1__title text-right tshfontsize3"><i class="fa fa-phone tshfontsize3"></i>
+                                                    شماره تلفن:
+                                                </h3>
+                                                &lt;!&ndash;<span class="m-widget1__desc">میانگین درآمد هفتگی</span>&ndash;&gt;
+                                            </div>
+                                            <div class="col m&#45;&#45;align-right">
+                                                <span class="m-widget1__number m&#45;&#45;font-brand tshfontsize3">09197386684</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-widget1__item">
+                                        <div class="row m-row&#45;&#45;no-padding align-items-center">
+                                            <div class="col">
+                                                <h3 class="m-widget1__title text-right tshfontsize3"><i class="fa fa-phone tshfontsize3"></i>
+                                                    شماره تلفن:
+                                                </h3>
+                                                &lt;!&ndash;<span class="m-widget1__desc">میانگین درآمد هفتگی</span>&ndash;&gt;
+                                            </div>
+                                            <div class="col m&#45;&#45;align-right">
+                                                <span class="m-widget1__number m&#45;&#45;font-brand tshfontsize3">09197386684</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="col-12 btn btn-success mt-3"><i class="fa fa-comment"></i>
+                                            چت
+                                        </button>
+                                    </div>
+                                </div>-->
+                            </div>
+                            <ul class="m-nav m-nav--hover-bg m-portlet-fit--sides mt-2 cus-prof-menu">
+                                <li class="m-nav__item active-cust-profile">
+                                    <a class="m-nav__link" href="javascript:void(0)">
+                                        <i class="m-nav__link-icon flaticon-user"></i>
+                                        <span class="m-nav__link-text">اطلاعات شخصی</span>
+                                    </a>
+                                </li>
+                                <li class="m-nav__item">
+                                    <a class="m-nav__link" href="javascript:void(0)">
+                                        <i class="m-nav__link-icon flaticon-safe-shield-protection"></i>
+                                        <span class="m-nav__link-text">اطلاعات کاربری</span>
+                                    </a>
+                                </li>
+                                <li class="m-nav__item">
+                                    <a class="m-nav__link" href="javascript:void(0)">
+                                        <i class="m-nav__link-icon flaticon-list"></i>
+                                        <span class="m-nav__link-text">مدیریت دسترسی ها</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="m-portlet m-portlet--full-height m-portlet--tabs  ">
+                        <div class="m-portlet__head">
+                            <div class="m-portlet__head-tools">
+                                <ul class="nav nav-tabs m-tabs m-tabs-line   m-tabs-line--left m-tabs-line--primary" role="tablist">
+                                    <li class="nav-item m-tabs__item">
+                                        <a class="nav-link m-tabs__link active add-admin-title" data-toggle="tab" href="#m_user_profile_tab_1" role="tab">
+                                            <i class="flaticon-share m--hide"></i>
+                                            <cust_title>
+                                                اطلاعات شخصی
+                                            </cust_title>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="m_user_profile_tab_1">
+                                <form class="m-form m-form--fit m-form--label-align-right" onsubmit="return false;" id="cusform">
+                                    <div class="m-portlet__body add-admin-content-inner" style="padding-bottom: 0">
+                                        <div class="per-info">
+                                            <div class="row">
+                                                <div class="form-group m-form__group col-lg-6 col-xs-12">
+                                                    <label for="firstname_cus" class="col-12 col-form-label text-right">نام</label>
+                                                    <div class="col-12">
+                                                        <input class="form-control m-input" id="firstname_cus" name="firstname_cus" type="text" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group col-lg-6 col-xs-12" style="padding-top: 0;">
+                                                    <label for="lastname_cus" class="col-12 text-right col-form-label">نام خانوادگی</label>
+                                                    <div class="col-12">
+                                                        <input class="form-control m-input" id="lastname_cus" name="lastname_cus" type="text" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group m-form__group col-lg-6 col-xs-12">
+                                                    <label for="nickname_cus" class="col-12 text-right col-form-label">نام مستعار</label>
+                                                    <div class="col-12">
+                                                        <input class="form-control m-input" id="nickname_cus" name="nickname_cus" type="text" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group col-lg-6 col-xs-12" style="padding-top: 0;">
+                                                    <label for="email_cus" class="col-12 text-right col-form-label">ایمیل</label>
+                                                    <div class="col-12">
+                                                        <input class="form-control m-input" id="email_cus" name="email_cus" type="text" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group m-form__group col-lg-6 col-xs-12">
+                                                    <label for="phone_cus" class="col-12 text-right col-form-label">شماره تلفن</label>
+                                                    <div class="col-12">
+                                                        <input class="form-control m-input" id="phone_cus" name="phone_cus" type="number" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group col-lg-6 col-xs-12" style="padding-top: 0;">
+                                                    <label for="phone_cus2" class="col-12 text-right col-form-label">شماره تلفن</label>
+                                                    <div class="col-12">
+                                                        <input class="form-control m-input" id="phone_cus2" name="phone_cus2" type="number" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-portlet__foot m-portlet__foot--fit mt-4">
+                                                <div class="m-form__actions">
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                        </div>
+                                                        <div class="col-12 text-left">
+                                                            <button type="submit" class="btn btn-accent m-btn m-btn--air m-btn--custom tshnext-1">بعدی</button>&nbsp;&nbsp;
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-info" style="display: none">
+                                            <div class="form-group m-form__group row">
+                                                <label for="username_cus" class="col-lg-2 col-xs-12 col-form-label">نام کاربری</label>
+                                                <div class="col-lg-9 col-xs-12">
+                                                    <input class="form-control m-input" id="username_cus" name="username_cus" type="text" value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label for="pw_cus" class="col-lg-2 col-xs-12 col-form-label">رمز عبور</label>
+                                                <div class="col-lg-9 col-xs-12">
+                                                    <input class="form-control m-input" id="pw_cus" name="pw_cus" type="password" value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label for="repw_cus" class="col-lg-2 col-xs-12 col-form-label">تکرار رمز عبور</label>
+                                                <div class="col-lg-9 col-xs-12">
+                                                    <input class="form-control m-input" id="repw_cus" name="repw_cus" type="password" value="">
+                                                </div>
+                                            </div>
+                                            <div class="m-portlet__foot m-portlet__foot--fit mt-4">
+                                                <div class="m-form__actions">
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                        </div>
+                                                        <div class="col-12 text-left">
+                                                            <button type="submit" class="btn btn-accent m-btn m-btn--air m-btn--custom tshnext-2">بعدی</button>&nbsp;&nbsp;
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="address-cust" style="display: none">
+                                            <div class="form-group m-form__group row">
+                                                <label class="col-form-label col-lg-2 col-sm-12">دسترسی</label>
+                                                <div class="col-lg-9 col-md-8 col-sm-12">
+                                                    <select class="form-control m-bootstrap-select m_selectpicker" style="width: 100%;" id="m_select2_1-9" title="انتخاب کنید..." name="permi_select">
+                                                        <option>مدیر کل</option>
+                                                        <option>مدیر مطلب گذاری</option>
+                                                        <option>حسابداری</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="col-12">
+                                                        <div class="m-portlet__body col-lg-6 col-xs-12">
+                                                            <div id="m_tree_3" class="tree-demo jstree jstree-3 jstree-rtl jstree-default jstree-checkbox-selection" role="tree" aria-multiselectable="true" tabindex="0" aria-activedescendant="j3_1" aria-busy="false"><ul class="jstree-container-ul jstree-children jstree-wholerow-ul jstree-no-dots" role="group"><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="j3_1_anchor" aria-expanded="true" id="j3_1" class="jstree-node  jstree-open"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="j3_1_anchor"><i class="jstree-icon jstree-checkbox jstree-undetermined" role="presentation"></i><i class="jstree-icon jstree-themeicon fa fa-folder m--font-warning jstree-themeicon-custom" role="presentation"></i>چک باکس دار</a><ul role="group" class="jstree-children"><li role="treeitem" aria-selected="true" aria-level="2" aria-labelledby="j3_2_anchor" id="j3_2" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow jstree-wholerow-clicked">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor  jstree-clicked" href="#" tabindex="-1" id="j3_2_anchor"><i class="jstree-icon jstree-checkbox" role="presentation"></i><i class="jstree-icon jstree-themeicon fa fa-folder m--font-warning jstree-themeicon-custom" role="presentation"></i>initially selected</a></li><li role="treeitem" aria-selected="false" aria-level="2" aria-labelledby="j3_3_anchor" id="j3_3" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="j3_3_anchor"><i class="jstree-icon jstree-checkbox" role="presentation"></i><i class="jstree-icon jstree-themeicon fa fa-warning m--font-danger jstree-themeicon-custom" role="presentation"></i>آیکون سفارشی</a></li><li role="treeitem" aria-selected="false" aria-level="2" aria-labelledby="j3_4_anchor" aria-expanded="true" id="j3_4" class="jstree-node  jstree-open"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="j3_4_anchor"><i class="jstree-icon jstree-checkbox" role="presentation"></i><i class="jstree-icon jstree-themeicon fa fa-folder m--font-default jstree-themeicon-custom" role="presentation"></i>باز شده</a><ul role="group" class="jstree-children"><li role="treeitem" aria-selected="false" aria-level="3" aria-labelledby="j3_5_anchor" id="j3_5" class="jstree-node  jstree-leaf jstree-last"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="j3_5_anchor"><i class="jstree-icon jstree-checkbox" role="presentation"></i><i class="jstree-icon jstree-themeicon fa fa-folder m--font-warning jstree-themeicon-custom" role="presentation"></i>دیگر گره ها</a></li></ul></li><li role="treeitem" aria-selected="false" aria-level="2" aria-labelledby="j3_6_anchor" id="j3_6" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="j3_6_anchor"><i class="jstree-icon jstree-checkbox" role="presentation"></i><i class="jstree-icon jstree-themeicon fa fa-warning m--font-waring jstree-themeicon-custom" role="presentation"></i>آیکون سفارشی</a></li><li role="treeitem" aria-selected="false" aria-level="2" aria-labelledby="j3_7_anchor" aria-disabled="true" id="j3_7" class="jstree-node  jstree-leaf jstree-last"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor  jstree-disabled" href="#" tabindex="-1" id="j3_7_anchor"><i class="jstree-icon jstree-checkbox" role="presentation"></i><i class="jstree-icon jstree-themeicon fa fa-check m--font-success jstree-themeicon-custom" role="presentation"></i>گره غیرفعال</a></li></ul></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="j3_8_anchor" id="j3_8" class="jstree-node  jstree-leaf jstree-last"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="j3_8_anchor"><i class="jstree-icon jstree-checkbox" role="presentation"></i><i class="jstree-icon jstree-themeicon fa fa-folder m--font-warning jstree-themeicon-custom" role="presentation"></i>انتخاب کل</a></li></ul></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-portlet__foot m-portlet__foot--fit mt-4">
+                                                <div class="m-form__actions">
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                        </div>
+                                                        <div class="col-12 text-left">
+                                                            <button type="submit" class="btn btn-accent m-btn m-btn--air m-btn--custom saveadmin">ذخیره</button>&nbsp;&nbsp;
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	
+
+
+<script>
+    jQuery(document).ready(function () {
+        Treeview.init();
+    });
+
+
+    var Treeview = {
+        init: function () {
+            $("#m_tree_3").jstree({
+                core: {
+                    themes: { responsive: !1 },
+                    check_callback: !1,
+                    data: [
+                        {
+                            text: "1", icon: "fa fa-folder m--font-warning",
+                            children: [
+                                {
+                                    text: "2", icon: "fa fa-folder m--font-warning",
+                                    children: [
+                                        {
+                                            text: "3", icon: "fa fa-folder m--font-warning",
+                                            children: [
+                                                { text: "4", icon: "fa fa-folder m--font-warning" },
+                                            ],
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            text: "11", icon: "fa fa-folder m--font-warning",
+                            children: [
+                                {
+                                    text: "22", icon: "fa fa-folder m--font-warning",
+                                    children: [
+                                        {
+                                            text: "33", icon: "fa fa-folder m--font-warning",
+                                            children: [
+                                                { text: "44", icon: "fa fa-folder m--font-warning" },
+                                            ],
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                types: { default: { icon: "fa fa-folder m--font-brand" }, file: { icon: "fa fa-file  m--font-brand" } },
+                state: { key: "demo" },
+                plugins: ["contextmenu", "state", "types", "checkbox"],
+            }),
+                $("#m_tree_33").jstree({
+                    core: {
+                        themes: { responsive: !1 },
+                        check_callback: !1,
+                        data: [
+                            {
+                                text: "1", icon: "fa fa-folder m--font-warning",
+                                children: [
+                                    {
+                                        text: "2", icon: "fa fa-folder m--font-warning",
+                                        children: [
+                                            {
+                                                text: "3", icon: "fa fa-folder m--font-warning",
+                                                children: [
+                                                    { text: "4", icon: "fa fa-folder m--font-warning" },
+                                                ],
+                                            },
+                                        ],
+                                    },
+                                ],
+                            },
+                            {
+                                text: "11", icon: "fa fa-folder m--font-warning",
+                                children: [
+                                    {
+                                        text: "22", icon: "fa fa-folder m--font-warning",
+                                        children: [
+                                            {
+                                                text: "33", icon: "fa fa-folder m--font-warning",
+                                                children: [
+                                                    { text: "44", icon: "fa fa-folder m--font-warning" },
+                                                ],
+                                            },
+                                        ],
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                    types: { default: { icon: "fa fa-folder m--font-brand" }, file: { icon: "fa fa-file  m--font-brand" } },
+                    state: { key: "demo" },
+                    plugins: ["contextmenu", "state", "types", "checkbox"],
+                });
+        },
+    };
+   
+
+</script>

@@ -1,0 +1,194 @@
+﻿@{
+    ViewData["Title"] = "companylist";
+    Layout = "~/Areas/Customer/Views/Shared/_Layout.cshtml";
+}
+
+<main class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <!--Section-->
+    <section class="container section-margin-top section-margin-bottom">
+        <!--Right Column-->
+        <section class="col-md-4 company-list-right">
+            <!--Suggestion-->
+            <div class="col-xs-12 suggestion-div hidden-sm">
+                <a href="">
+                    <img src="~/Customer/assets/images/Products.jpg" alt="">
+                </a>
+            </div>
+            <!--End Suggestion-->
+            <div class="col-xs-12 mb-0">
+                <!-- Filters -->
+                <div class="col-md-12 col-sm-4 col-xs-12 section-white section-border">
+                    <h1 class="col-xs-12 no-padding">
+                        فیلتر های اعمال شده
+                        <span class="remove-filters">حذف فیلترها</span>
+                    </h1>
+                    <div class="cu-filters col-xs-12 no-padding">
+                        <span>
+                            برند: سامسونگ
+                            <i class="fal fa-times"></i>
+                        </span>
+                    </div>
+                </div>
+                <!--End Filtera-->
+                <!--Search-->
+                <div class="col-md-12 col-sm-4 col-xs-12 section-white section-border">
+                    <h1 class="col-xs-12 no-padding">
+                        جستجو در شرکت ها
+                        <span class="toggle-side-arrow"><i class="fa fa-chevron-up"></i></span>
+                    </h1>
+                    <div class="search-field col-xs-12 no-padding">
+                        <form action="" method="post" autocomplete="off">
+                            <div class="input-group">
+                                <span class="input-group-addon" style="padding-left: 0;"><i class="fal fa-search"></i></span>
+                                <input type="text" class="form-control" placeholder="جستجو">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--End Search-->
+                <!--Brand-->
+                <div class="col-md-12 col-sm-4 col-xs-12 section-white section-border">
+                    <h1 class="col-xs-12 no-padding">
+                        برند
+                        <span class="toggle-side-arrow"><i class="fa fa-chevron-up"></i></span>
+                    </h1>
+                    <div class="search-field col-xs-12 no-padding">
+                        <form action="" method="post" autocomplete="off">
+                            <div class="input-group">
+                                <span class="input-group-addon" style="padding-left: 0;"><i class="fal fa-search"></i></span>
+                                <input type="text" class="form-control" placeholder="جستجو">
+                            </div>
+                            <div class="checkbox-search custom-scroll">
+                                <ul>
+                                    <li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="checkbox" class="company-list-checkbox" />
+                                            <label for="checkbox"></label>
+                                        </span>
+                                        <span>
+                                            جنرال موتور
+                                        </span>
+                                        <span class="brand-english-name">
+                                            General Motor
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--End Brand-->
+                <!--Switch-->
+                <div class="col-md-12 col-sm-4 col-xs-12 section-white section-border">
+                    <h1 class="col-xs-12 no-padding">
+                        فلان
+                        <span class="toggle-side-arrow"><i class="fa fa-chevron-up"></i></span>
+                    </h1>
+                    <div class="search-field col-xs-12 no-padding">
+                        <form action="" method="post" autocomplete="off">
+                            <div class="custom-overflow-sm">
+                                <div class="custom-switch">
+                                    <input type="checkbox" id="switch" />
+                                    <label for="switch"></label>
+                                    <span class="custom-switch-text">
+                                        کالاهای موجود
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--End Switch-->
+            </div>
+        </section>
+        <!--End Right Column-->
+        <!--Left Column-->
+        <section class="col-md-8 no-padding company-list-left">
+            <div class="col-xs-12 list-sort-div">
+                <img src="~/Customer/assets/images/sort.png" alt="">
+                <span class="list-sort-div-title">مرتب سازی بر اساس</span>
+                <div class="list-sort-div-item-div">
+                    <span class="list-sort-div-item sort-active">پربازدید ترین ها</span>
+                    <span class="list-sort-div-item">محبوب ترین ها</span>
+                    <span class="list-sort-div-item">جدیدترین ها</span>
+                </div>
+            </div>
+            <div class="col-xs-12 no-padding section-white">
+                <ul class="col-xs-12 no-padding">
+                    <!--Company-->
+                    <a href="">
+                        <li class="col-xs-12 no-padding company-list-item">
+                            <div class="col-sm-2 col-xs-12">
+                                <img src="~/Customer/assets/images/damande.png" alt="">
+                            </div>
+                            <div class="col-sm-10 col-xs-12">
+                                <h1>
+                                    شرکت دمنده
+                                    <span class="company-list-rating">
+                                        امتیاز فروشنده:
+                                        <span>(25)</span>
+                                        4.5
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </h1>
+                                <p class="company-list-detail">
+                                    حوزه فعالیت:
+                                    تجهیزات گرمایش و سرمایش
+                                </p>
+                                <p class="company-list-desc">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای م
+                                </p>
+                            </div>
+                        </li>
+                    </a>
+                    <!--End Company-->
+                    <!--Company-->
+                    <a href="">
+                        <li class="col-xs-12 no-padding company-list-item">
+                            <div class="col-sm-2 col-xs-12">
+                                <img src="~/Customer/assets/images/damande.png" alt="">
+                            </div>
+                            <div class="col-sm-10 col-xs-12">
+                                <h1>
+                                    شرکت دمنده
+                                    <span class="company-list-rating">
+                                        امتیاز فروشنده:
+                                        <span>(25)</span>
+                                        4.5
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </h1>
+                                <p class="company-list-detail">
+                                    حوزه فعالیت:
+                                    تجهیزات گرمایش و سرمایش
+                                </p>
+                                <p class="company-list-desc">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای م
+                                </p>
+                            </div>
+                        </li>
+                    </a>
+                    <!--End Company-->
+                </ul>
+                <div class="col-xs-12">
+                    <ul class="col-xs-12 custom-pagination">
+                        <li class="custom-pagination-deactive"><i class="fal fa-chevron-double-right"></i></li>
+                        <li class="custom-pagination-active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li><i class="fal fa-chevron-double-left"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--End Left Column-->
+    </section>
+    <!--End Section-->
+</main>

@@ -1,0 +1,1688 @@
+﻿@{
+    ViewData["Title"] = "productsList";
+    Layout = "~/Areas/Company/Views/Shared/_Layout.cshtml";
+}
+<div class="m-grid__item m-grid__item--fluid m-wrapper">
+
+    <!-- BEGIN: Subheader -->
+    <div class="m-subheader ">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h3 class="m-subheader__title display-inline-block ml-0 pl-0">داشبورد</h3>
+                <ul class="m-subheader__breadcrumbs m-nav m-nav--inline display-inline-block">
+                    <li class="m-nav__separator">
+                        -
+                    </li>
+                    <li class="m-nav__item">
+                        <a href="javascript:void(0)" class="m-nav__link">
+                            <span class="m-nav__link-text">
+                                محصولات
+                            </span>
+                        </a>
+                    </li>
+                    <li class="m-nav__separator">
+                        -
+                    </li>
+                    <li class="m-nav__item">
+                        <a href="" class="m-nav__link">
+                            <span class="m-nav__link-text">
+                                لیست محصولات
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span class="m-subheader__daterange">
+                    &nbsp;
+                    17 آذر
+                    &nbsp;<a href="#" class="btn btn-sm btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+                        <i class="la la-calendar"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- END: Subheader -->
+    <div class="m-content">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="m-portlet m-portlet--full-height m-portlet--tabs  ">
+                    <div class="m-portlet__head">
+                        <div class="m-portlet__head-tools">
+                            <ul class="nav nav-tabs m-tabs m-tabs-line   m-tabs-line--left m-tabs-line--primary" role="tablist">
+                                <li class="nav-item m-tabs__item">
+                                    <a class="nav-link m-tabs__link active" data-toggle="tab" href="#m_user_profile_tab_1" role="tab">
+                                        <i class="flaticon-share m--hide"></i>
+                                        <cust_title>
+                                            لیست محصولات
+                                        </cust_title>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="m_user_profile_tab_1">
+                            <div class="m-portlet__body">
+                                <div class="col-lg-12 mb-3 no-padding">
+                                    <label class="form-control-label">جستجو:</label>
+                                    <input type="text" class="form-control m-input" placeholder="" value="" style="padding-left: 60px;">
+                                    <button class="btn btn-success" style="position: absolute;bottom: 0;left: 0;border-radius: .25rem 0 0 .25rem!important;"><i class="fa fa-search"></i></button>
+                                </div>
+                                <table class="nres-table table table-striped table-hover m-table--head-separator-primary">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>نام محصول</th>
+                                            <th>تاریخ ثبت</th>
+                                            <th>ثبت شده توسط</th>
+                                            <th>وضعیت</th>
+                                            <th>تاریخ نمایش</th>
+                                            <th>پرسش ها</th>
+                                            <th>پاسخ ها</th>
+                                            <th>دسته بندی 1</th>
+                                            <th>دسته بندی 2</th>
+                                            <th>دسته بندی 3</th>
+                                            <th>دسته بندی 4</th>
+                                            <th>امتیاز</th>
+                                            <th>بازدید</th>
+                                            <th>دیدگاه</th>
+                                            <th>عملیات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>
+                                                قبر دو طبقه
+                                            </td>
+                                            <td>
+                                                1399/03/20
+                                            </td>
+                                            <td>
+                                                عزراییل
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-danger btn-padding color-white">غیر فعال</button>
+                                                <button class="btn btn-success btn-padding color-white">فعال</button>
+                                            </td>
+                                            <td>
+                                                1399/05/15
+                                            </td>
+                                            <td>
+                                                23
+                                            </td>
+                                            <td>
+                                                12
+                                            </td>
+                                            <td>
+                                                دسته بندی 1
+                                            </td>
+                                            <td>
+                                                دسته بندی 2
+                                            </td>
+                                            <td>
+                                                دسته بندی 3
+                                            </td>
+                                            <td>
+                                                دسته بندی 4
+                                            </td>
+                                            <td>
+                                                4.3
+                                            </td>
+                                            <td>
+                                                9995
+                                            </td>
+                                            <td>
+                                                10
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">
+                                                        <a href="#" class="m-portlet__nav-link btn m-btn--outline-2x m-btn--air m-btn--icon m-btn--icon-only m-btn--pill m-dropdown__toggle rotate-ext">
+                                                            <i class="la la-plus m--hide"></i>
+                                                            <i class="la la-ellipsis-h"></i>
+                                                        </a>
+                                                        <div class="m-dropdown__wrapper" style="z-index: 101;">
+                                                            <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="right: auto; left: 21.5px;"></span>
+                                                            <div class="m-dropdown__inner">
+                                                                <div class="m-dropdown__body">
+                                                                    <div class="m-dropdown__content">
+                                                                        <ul class="m-nav ext-menu-table">
+                                                                            <li class="m-nav__item">
+                                                                                <a href="" class="m-nav__link">
+                                                                                    <i class="m-nav__link-icon flaticon-edit"></i>
+                                                                                    <span class="m-nav__link-text">
+                                                                                        ویرایش
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="m-nav__item">
+                                                                                <a href="" class="m-nav__link">
+                                                                                    <i class="m-nav__link-icon flaticon-eye"></i>
+                                                                                    <span class="m-nav__link-text">
+                                                                                        مشاهده
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="m-nav__item">
+                                                                                <a href="javascript:void(0);" class="m-nav__link comments-btn" data-target="#comments-modal" data-toggle="modal" data-name="قبر دو طبقه">
+                                                                                    <i class="m-nav__link-icon flaticon-list-1"></i>
+                                                                                    <span class="m-nav__link-text">
+                                                                                        نظرات
+                                                                                        <span class="m-badge m-badge--success">2</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="m-nav__item">
+                                                                                <a href="javascript:void(0);" class="m-nav__link qa-btn" data-target="#qa-modal" data-toggle="modal" data-name="قبر دو طبقه">
+                                                                                    <i class="m-nav__link-icon flaticon-questions-circular-button"></i>
+                                                                                    <span class="m-nav__link-text">
+                                                                                        پرسش ها
+                                                                                        <span class="m-badge m-badge--success">2</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="m-nav__item">
+                                                                                <a href="javascript:void(0);" class="m-nav__link act-prd-btn" data-target="#act-modal" data-toggle="modal" data-name="قبر دو طبقه">
+                                                                                    <i class="m-nav__link-icon la la-check"></i>
+                                                                                    <span class="m-nav__link-text">
+                                                                                        فعال کردن
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="m-nav__item">
+                                                                                <a href="javascript:void(0);" class="m-nav__link dis-prd-btn" data-target="#dis-modal" data-toggle="modal" data-name="قبر دو طبقه">
+                                                                                    <i class="m-nav__link-icon flaticon-close"></i>
+                                                                                    <span class="m-nav__link-text">
+                                                                                        غیر فعال کردن
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="m-nav__item">
+                                                                                <a href="javascript:void(0);" class="m-nav__link change-date-btn" data-target="#change-date-modal" data-toggle="modal" data-name="قبر دو طبقه" data-date="1399/09/29  00:00:00">
+                                                                                    <i class="m-nav__link-icon flaticon-calendar-with-a-clock-time-tools"></i>
+                                                                                    <span class="m-nav__link-text">
+                                                                                        تغییر تاریخ نمایش
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table style="display: none;" class="res-table table table-striped table-hover m-table m-table--head-separator-primary">
+                                    <tr>
+                                        <th>#</th>
+                                        <td>
+                                            1
+                                            <div style="display: inline-block!important;float: left;">
+                                                <div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">
+                                                    <a href="#" class="m-portlet__nav-link btn m-btn--outline-2x m-btn--air m-btn--icon m-btn--icon-only m-btn--pill m-dropdown__toggle rotate-ext">
+                                                        <i class="la la-plus m--hide"></i>
+                                                        <i class="la la-ellipsis-h"></i>
+                                                    </a>
+                                                    <div class="m-dropdown__wrapper" style="z-index: 101;">
+                                                        <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="right: auto; left: 21.5px;"></span>
+                                                        <div class="m-dropdown__inner">
+                                                            <div class="m-dropdown__body">
+                                                                <div class="m-dropdown__content">
+                                                                    <ul class="m-nav ext-menu-table">
+                                                                        <li class="m-nav__item">
+                                                                            <a href="" class="m-nav__link">
+                                                                                <i class="m-nav__link-icon flaticon-edit"></i>
+                                                                                <span class="m-nav__link-text">
+                                                                                    ویرایش
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="m-nav__item">
+                                                                            <a href="" class="m-nav__link">
+                                                                                <i class="m-nav__link-icon flaticon-eye"></i>
+                                                                                <span class="m-nav__link-text">
+                                                                                    مشاهده
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="m-nav__item">
+                                                                            <a href="javascript:void(0);" class="m-nav__link comments-btn" data-target="#comments-modal" data-toggle="modal" data-name="قبر دو طبقه">
+                                                                                <i class="m-nav__link-icon flaticon-list-1"></i>
+                                                                                <span class="m-nav__link-text">
+                                                                                    نظرات
+                                                                                    <span class="m-badge m-badge--success">2</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="m-nav__item">
+                                                                            <a href="javascript:void(0);" class="m-nav__link qa-btn" data-target="#qa-modal" data-toggle="modal" data-name="قبر دو طبقه">
+                                                                                <i class="m-nav__link-icon flaticon-questions-circular-button"></i>
+                                                                                <span class="m-nav__link-text">
+                                                                                    پرسش ها
+                                                                                    <span class="m-badge m-badge--success">2</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="m-nav__item">
+                                                                            <a href="javascript:void(0);" class="m-nav__link act-prd-btn" data-target="#act-modal" data-toggle="modal" data-name="قبر دو طبقه">
+                                                                                <i class="m-nav__link-icon la la-check"></i>
+                                                                                <span class="m-nav__link-text">
+                                                                                    فعال کردن
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="m-nav__item">
+                                                                            <a href="javascript:void(0);" class="m-nav__link dis-prd-btn" data-target="#dis-modal" data-toggle="modal" data-name="قبر دو طبقه">
+                                                                                <i class="m-nav__link-icon flaticon-close"></i>
+                                                                                <span class="m-nav__link-text">
+                                                                                    غیر فعال کردن
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="m-nav__item">
+                                                                            <a href="javascript:void(0);" class="m-nav__link change-date-btn" data-target="#change-date-modal" data-toggle="modal" data-name="قبر دو طبقه" data-date="1399/09/29  00:00:00">
+                                                                                <i class="m-nav__link-icon flaticon-calendar-with-a-clock-time-tools"></i>
+                                                                                <span class="m-nav__link-text">
+                                                                                    تغییر تاریخ نمایش
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>نام محصول</th>
+                                        <td>
+                                            قبر دو طبقه
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>تاریخ ثبت</th>
+                                        <td>
+                                            1399/03/20
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>ثبت شده توسط</th>
+                                        <td>
+                                            عزراییل
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>وضعیت</th>
+                                        <td>
+                                            <button class="btn btn-danger btn-padding color-white">غیر فعال</button>
+                                            <button class="btn btn-success btn-padding color-white">فعال</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>تاریخ نمایش</th>
+                                        <td>
+                                            1399/05/15
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>پرسش ها</th>
+                                        <td>
+                                            23
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>پاسخ ها</th>
+                                        <td>
+                                            12
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>دسته بندی 1</th>
+                                        <td>
+                                            دسته بندی 1
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>دسته بندی 2</th>
+                                        <td>
+                                            دسته بندی 2
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>دسته بندی 3</th>
+                                        <td>
+                                            دسته بندی 3
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>دسته بندی 4</th>
+                                        <td>
+                                            دسته بندی 4
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>امتیاز</th>
+                                        <td>
+                                            4.3
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>بازدید</th>
+                                        <td>
+                                            9995
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>دیدگاه</th>
+                                        <td>
+                                            10
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="row">
+                                    <div class="col-lg-12 mt-4 mb-4 col-xs-12 pag-par">
+                                        <span class="col-xs-12">
+                                            صفحه
+                                            <span>50</span>
+                                            از
+                                            <span>170</span>
+                                        </span>
+                                        <ul class="tshpaglist col-xs-12">
+                                            <li class="btn btn-brand disabled">قبلی</li>
+                                            <li class="btn btn-brand active-pag">1</li>
+                                            <li class="btn btn-brand">2</li>
+                                            <li class="btn btn-brand">3</li>
+                                            <li class="btn btn-brand">4</li>
+                                            <li class="btn btn-brand">5</li>
+                                            <li class="btn btn-brand">6</li>
+                                            <li class="btn btn-brand">7</li>
+                                            <li class="btn btn-brand">8</li>
+                                            <li class="btn btn-brand">9</li>
+                                            <li class="btn btn-brand">10</li>
+                                            <li class="btn btn-brand">بعدی</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- QA -->
+<div class="modal fade" id="qa-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    پرسش ها و پاسخ های
+                    <span class="rccm-title">
+
+                    </span>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body comments-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <span class="open-reply">
+                                    <span>
+                                        پاسخ
+                                        <i class="fa fa-chevron-down"></i>
+                                    </span>
+                                </span>
+                                <div class="col-12 reply-section-div">
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label for="reply-qa">پاسخ:</label>
+                                        <textarea class="form-control no-resize col-12 display-inline-block" id="reply-qa" rows="4"></textarea>
+                                    </div>
+                                    <div class="text-left">
+                                        <button class="btn btn-success btn-padding mb-2 send-reply-qa">
+                                            ثبت پاسخ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <span class="open-reply">
+                                    <span>
+                                        پاسخ
+                                        <i class="fa fa-chevron-down"></i>
+                                    </span>
+                                </span>
+                                <div class="col-12 reply-section-div">
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label for="reply-qa">پاسخ:</label>
+                                        <textarea class="form-control no-resize col-12 display-inline-block" id="reply-qa" rows="4"></textarea>
+                                    </div>
+                                    <div class="text-left">
+                                        <button class="btn btn-success btn-padding mb-2 send-reply-qa">
+                                            ثبت پاسخ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <span class="open-reply">
+                                    <span>
+                                        پاسخ
+                                        <i class="fa fa-chevron-down"></i>
+                                    </span>
+                                </span>
+                                <div class="col-12 reply-section-div">
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label for="reply-qa">پاسخ:</label>
+                                        <textarea class="form-control no-resize col-12 display-inline-block" id="reply-qa" rows="4"></textarea>
+                                    </div>
+                                    <div class="text-left">
+                                        <button class="btn btn-success btn-padding mb-2 send-reply-qa">
+                                            ثبت پاسخ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <span class="open-reply">
+                                    <span>
+                                        پاسخ
+                                        <i class="fa fa-chevron-down"></i>
+                                    </span>
+                                </span>
+                                <div class="col-12 reply-section-div">
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label for="reply-qa">پاسخ:</label>
+                                        <textarea class="form-control no-resize col-12 display-inline-block" id="reply-qa" rows="4"></textarea>
+                                    </div>
+                                    <div class="text-left">
+                                        <button class="btn btn-success btn-padding mb-2 send-reply-qa">
+                                            ثبت پاسخ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <span class="open-reply">
+                                    <span>
+                                        پاسخ
+                                        <i class="fa fa-chevron-down"></i>
+                                    </span>
+                                </span>
+                                <div class="col-12 reply-section-div">
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label for="reply-qa">پاسخ:</label>
+                                        <textarea class="form-control no-resize col-12 display-inline-block" id="reply-qa" rows="4"></textarea>
+                                    </div>
+                                    <div class="text-left">
+                                        <button class="btn btn-success btn-padding mb-2 send-reply-qa">
+                                            ثبت پاسخ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <span class="open-reply">
+                                    <span>
+                                        پاسخ
+                                        <i class="fa fa-chevron-down"></i>
+                                    </span>
+                                </span>
+                                <div class="col-12 reply-section-div">
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label for="reply-qa">پاسخ:</label>
+                                        <textarea class="form-control no-resize col-12 display-inline-block" id="reply-qa" rows="4"></textarea>
+                                    </div>
+                                    <div class="text-left">
+                                        <button class="btn btn-success btn-padding mb-2 send-reply-qa">
+                                            ثبت پاسخ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <span class="open-reply">
+                                    <span>
+                                        پاسخ
+                                        <i class="fa fa-chevron-down"></i>
+                                    </span>
+                                </span>
+                                <div class="col-12 reply-section-div">
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label for="reply-qa">پاسخ:</label>
+                                        <textarea class="form-control no-resize col-12 display-inline-block" id="reply-qa" rows="4"></textarea>
+                                    </div>
+                                    <div class="text-left">
+                                        <button class="btn btn-success btn-padding mb-2 send-reply-qa">
+                                            ثبت پاسخ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <span class="open-reply">
+                                    <span>
+                                        پاسخ
+                                        <i class="fa fa-chevron-down"></i>
+                                    </span>
+                                </span>
+                                <div class="col-12 reply-section-div">
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label for="reply-qa">پاسخ:</label>
+                                        <textarea class="form-control no-resize col-12 display-inline-block" id="reply-qa" rows="4"></textarea>
+                                    </div>
+                                    <div class="text-left">
+                                        <button class="btn btn-success btn-padding mb-2 send-reply-qa">
+                                            ثبت پاسخ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <span class="open-reply">
+                                    <span>
+                                        پاسخ
+                                        <i class="fa fa-chevron-down"></i>
+                                    </span>
+                                </span>
+                                <div class="col-12 reply-section-div">
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label for="reply-qa">پاسخ:</label>
+                                        <textarea class="form-control no-resize col-12 display-inline-block" id="reply-qa" rows="4"></textarea>
+                                    </div>
+                                    <div class="text-left">
+                                        <button class="btn btn-success btn-padding mb-2 send-reply-qa">
+                                            ثبت پاسخ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <span class="open-reply">
+                                    <span>
+                                        پاسخ
+                                        <i class="fa fa-chevron-down"></i>
+                                    </span>
+                                </span>
+                                <div class="col-12 reply-section-div">
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label for="reply-qa">پاسخ:</label>
+                                        <textarea class="form-control no-resize col-12 display-inline-block" id="reply-qa" rows="4"></textarea>
+                                    </div>
+                                    <div class="text-left">
+                                        <button class="btn btn-success btn-padding mb-2 send-reply-qa">
+                                            ثبت پاسخ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <span class="open-reply">
+                                    <span>
+                                        پاسخ
+                                        <i class="fa fa-chevron-down"></i>
+                                    </span>
+                                </span>
+                                <div class="col-12 reply-section-div">
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label for="reply-qa">پاسخ:</label>
+                                        <textarea class="form-control no-resize col-12 display-inline-block" id="reply-qa" rows="4"></textarea>
+                                    </div>
+                                    <div class="text-left">
+                                        <button class="btn btn-success btn-padding mb-2 send-reply-qa">
+                                            ثبت پاسخ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End QA -->
+<!-- Product Comments -->
+<div class="modal fade" id="comments-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    نظرات ثبت شده برای
+                    <span class="rccm-title">
+
+                    </span>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body comments-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <div class="comment-rate">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <div class="comment-rate">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <div class="comment-rate">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <div class="comment-rate">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <div class="comment-rate">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <div class="comment-rate">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <div class="comment-rate">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <div class="comment-rate">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <div class="comment-rate">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <div class="comment-rate">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <div class="comment-rate">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <div class="comment-rate">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <div class="comment-rate">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <div class="comment-rate">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <div>
+                                <button class="btn btn-success btn-padding no-border-radius">
+                                    <i class="la la-check"></i>
+                                </button>
+                                <button class="btn btn-danger btn-padding no-border-radius">
+                                    <i class="la la-times"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h6>
+                                    نام و نام خانوادگی
+                                    <small>
+                                        1399/11/22
+                                    </small>
+                                </h6>
+                                <p>
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                    ریدین با این محصولتون
+                                </p>
+                                <div class="comment-rate">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">مشاهده شد</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Product Comments -->
+<!-- Change Date Product -->
+<div class="modal fade" id="change-date-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">تغییر تاریخ نمایش</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="form-group col-sm-4 no-margin">
+                        <button class="btn btn-default w100 h100" data-mddatetimepicker="true" data-targetselector="#input1" data-enabletimepicker="true" data-placement="left" data-trigger="click" data-englishnumber="true">انتخاب تاریخ</button>
+                    </div>
+                    <div class="form-group col-sm-8 no-margin">
+                        <input type="text" class="form-control" id="input1" value="" disabled="disabled" />
+                    </div>
+                    <style>
+                        .popover {
+                            z-index: 2000 !important;
+                        }
+                    </style>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-xs-12">
+                        محصول
+                        <span class="rccm-title">
+
+                        </span>
+                        در تاریخ
+                        <span class="prd-date-time">
+
+                        </span>
+                        نمایش داده میشود
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">انصراف</button>
+                <button type="button" class="btn btn-danger">ذخیره</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Change Date Product -->
+<!-- Disable Product -->
+<div class="modal fade" id="dis-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">غیر فعال کردن محصول</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    آیا محصول
+                    <span class="rccm-title">
+
+                    </span>
+                    غیر فعال شود ؟
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">خیر</button>
+                <button type="button" class="btn btn-danger">بله</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Disable Product -->
+<!-- Enable Product -->
+<div class="modal fade" id="act-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">فعال کردن محصول</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    آیا محصول
+                    <span class="rccm-title">
+
+                    </span>
+                    فعال شود ؟
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">خیر</button>
+                <button type="button" class="btn btn-danger">بله</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Enable Product -->
+
+
+<script>
+        $("body").on("click", ".popover", function () {
+            setTimeout(function () {
+                var thisVal = $("#change-date-modal").find("#input1").val();
+                $("#change-date-modal").find(".prd-date-time").text(thisVal);
+            })
+        });
+</script>

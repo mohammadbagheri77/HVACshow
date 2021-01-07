@@ -1,0 +1,618 @@
+﻿@{
+    ViewData["Title"] = "productslist";
+    Layout = "~/Areas/Customer/Views/Shared/_Layout.cshtml";
+}
+
+<main class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <!--Section-->
+    <section class="container section-margin-top section-margin-bottom">
+        <!--Breadcrumb-->
+        <div class="col-md-12 no-padding">
+            <div class="col-md-8 no-padding breadcrumb">
+                محصولات
+                / <a href="">دسته بندی اصلی محصول</a>
+                / <a href="">دسته بندی فرعی محصول</a>
+                / <a href="">محصول</a>
+            </div>
+        </div>
+        <!--End Breadcrumb-->
+        <!--Right Column-->
+        <section class="col-md-4 company-list-right">
+            <!--Suggestion-->
+            <div class="col-xs-12 suggestion-div hidden-sm">
+                <a href="">
+                    <img src="~/Customer/assets/images/Products.jpg" alt="">
+                </a>
+            </div>
+            <!--End Suggestion-->
+            <div class="col-xs-12 mb-0">
+                <!-- Filters -->
+                <div class="col-md-12 col-sm-4 col-xs-12 section-white section-border">
+                    <h1 class="col-xs-12 no-padding">
+                        فیلتر های اعمال شده
+                        <span class="remove-filters">حذف فیلترها</span>
+                    </h1>
+                    <div class="cu-filters col-xs-12 no-padding">
+                        <span>
+                            برند: سامسونگ
+                            <i class="fal fa-times"></i>
+                        </span>
+                    </div>
+                </div>
+                <!--End Filtera-->
+                <!--Search-->
+                <div class="col-md-12 col-sm-4 col-xs-12 section-white section-border">
+                    <h1 class="col-xs-12 no-padding">
+                        جستجو در شرکت ها
+                        <span class="toggle-side-arrow"><i class="fa fa-chevron-up"></i></span>
+                    </h1>
+                    <div class="search-field col-xs-12 no-padding">
+                        <form action="" method="post" autocomplete="off">
+                            <div class="input-group">
+                                <span class="input-group-addon" style="padding-left: 0;"><i class="fal fa-search"></i></span>
+                                <input type="text" class="form-control" placeholder="جستجو">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--End Search-->
+                <!--Brand-->
+                <div class="col-md-12 col-sm-4 col-xs-12 section-white section-border">
+                    <h1 class="col-xs-12 no-padding">
+                        برند
+                        <span class="toggle-side-arrow"><i class="fa fa-chevron-up"></i></span>
+                    </h1>
+                    <div class="search-field col-xs-12 no-padding">
+                        <form action="" method="post" autocomplete="off">
+                            <div class="input-group">
+                                <span class="input-group-addon" style="padding-left: 0;"><i class="fal fa-search"></i></span>
+                                <input type="text" class="form-control" placeholder="جستجو">
+                            </div>
+                            <div class="checkbox-search custom-scroll">
+                                <ul>
+                                    <li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="checkbox" class="company-list-checkbox" />
+                                            <label for="checkbox"></label>
+                                        </span>
+                                        <span>
+                                            جنرال موتور
+                                        </span>
+                                        <span class="brand-english-name">
+                                            General Motor
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--End Brand-->
+                <!--Switch-->
+                <div class="col-md-12 col-sm-4 col-xs-12 section-white section-border">
+                    <h1 class="col-xs-12 no-padding">
+                        فلان
+                        <span class="toggle-side-arrow"><i class="fa fa-chevron-up"></i></span>
+                    </h1>
+                    <div class="search-field col-xs-12 no-padding">
+                        <form action="" method="post" autocomplete="off">
+                            <div class="custom-overflow-sm">
+                                <div class="custom-switch">
+                                    <input type="checkbox" id="switch" />
+                                    <label for="switch"></label>
+                                    <span class="custom-switch-text">
+                                        کالاهای موجود
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--End Switch-->
+            </div>
+        </section>
+        <!--End Right Column-->
+        <!--Left Column-->
+        <section class="col-md-8 no-padding company-list-left">
+            <div class="col-xs-12 list-sort-div">
+                <img src="~/Customer/assets/images/sort.png" alt="">
+                <span class="list-sort-div-title">مرتب سازی بر اساس</span>
+                <div class="list-sort-div-item-div">
+                    <span class="list-sort-div-item sort-active">پربازدید ترین ها</span>
+                    <span class="list-sort-div-item">محبوب ترین ها</span>
+                    <span class="list-sort-div-item">جدیدترین ها</span>
+                </div>
+            </div>
+            <div class="col-xs-12 no-padding section-white">
+                <ul class="col-xs-12 no-padding products-list">
+                    <!--Product-->
+                    <a href="">
+                        <li class="col-sm-4 col-xs-12 product-list-item">
+                            <div>
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                                <h5 class="product-list-title">
+                                    کولر گازی جنرال موتور خیلی خیلی خفن
+                                </h5>
+                                <h6 class="product-list-rating">
+                                    <span>(25)</span>
+                                    4.5
+                                    <i class="fa fa-star"></i>
+                                </h6>
+                                <hr>
+                                <h6 class="product-list-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    دما تجهیز
+                                    <span class="product-list-company-rating">
+                                        <span>(25)</span>
+                                        4.5
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </h6>
+                            </div>
+                            <div class="col-sm-10 col-xs-12">
+
+                            </div>
+                        </li>
+                    </a>
+                    <!--End Product-->
+                    <!--Product-->
+                    <a href="">
+                        <li class="col-sm-4 col-xs-12">
+                            <div class="product-list-item">
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                                <h5 class="product-list-title">
+                                    کولر گازی جنرال موتور خیلی خیلی خفن
+                                </h5>
+                                <h6 class="product-list-rating">
+                                    <span>(25)</span>
+                                    4.5
+                                    <i class="fa fa-star"></i>
+                                </h6>
+                                <hr>
+                                <h6 class="product-list-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    دما تجهیز
+                                    <span class="product-list-company-rating">
+                                        <span>(25)</span>
+                                        4.5
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </h6>
+                            </div>
+                            <div class="col-sm-10 col-xs-12">
+
+                            </div>
+                        </li>
+                    </a>
+                    <!--End Product-->
+                    <!--Product-->
+                    <a href="">
+                        <li class="col-sm-4 col-xs-12">
+                            <div class="product-list-item">
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                                <h5 class="product-list-title">
+                                    کولر گازی جنرال موتور خیلی خیلی خفن
+                                </h5>
+                                <h6 class="product-list-rating">
+                                    <span>(25)</span>
+                                    4.5
+                                    <i class="fa fa-star"></i>
+                                </h6>
+                                <hr>
+                                <h6 class="product-list-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    دما تجهیز
+                                    <span class="product-list-company-rating">
+                                        <span>(25)</span>
+                                        4.5
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </h6>
+                            </div>
+                            <div class="col-sm-10 col-xs-12">
+
+                            </div>
+                        </li>
+                    </a>
+                    <!--End Product-->
+                    <!--Product-->
+                    <a href="">
+                        <li class="col-sm-4 col-xs-12">
+                            <div class="product-list-item">
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                                <h5 class="product-list-title">
+                                    کولر گازی جنرال موتور خیلی خیلی خفن
+                                </h5>
+                                <h6 class="product-list-rating">
+                                    <span>(25)</span>
+                                    4.5
+                                    <i class="fa fa-star"></i>
+                                </h6>
+                                <hr>
+                                <h6 class="product-list-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    دما تجهیز
+                                    <span class="product-list-company-rating">
+                                        <span>(25)</span>
+                                        4.5
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </h6>
+                            </div>
+                            <div class="col-sm-10 col-xs-12">
+
+                            </div>
+                        </li>
+                    </a>
+                    <!--End Product-->
+                    <!--Product-->
+                    <a href="">
+                        <li class="col-sm-4 col-xs-12">
+                            <div class="product-list-item">
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                                <h5 class="product-list-title">
+                                    کولر گازی جنرال موتور خیلی خیلی خفن
+                                </h5>
+                                <h6 class="product-list-rating">
+                                    <span>(25)</span>
+                                    4.5
+                                    <i class="fa fa-star"></i>
+                                </h6>
+                                <hr>
+                                <h6 class="product-list-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    دما تجهیز
+                                    <span class="product-list-company-rating">
+                                        <span>(25)</span>
+                                        4.5
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </h6>
+                            </div>
+                            <div class="col-sm-10 col-xs-12">
+
+                            </div>
+                        </li>
+                    </a>
+                    <!--End Product-->
+                </ul>
+                <div class="col-xs-12">
+                    <ul class="col-xs-12 custom-pagination">
+                        <li class="custom-pagination-deactive not-hover-pag"><i class="fal fa-chevron-double-right"></i></li>
+                        <li class="custom-pagination-active not-hover-pag">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li><i class="fal fa-chevron-double-left"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--End Left Column-->
+    </section>
+    <!--End Section-->
+    <!--Section-->
+    <section class="container section-shadow section-white section-border section-padding-bottom section-margin-bottom">
+        <div class="col-xs-12">
+            <!-- Title -->
+            <div class="section-title">
+                <h1 class="border-blue">
+                    مقالات مرتبط
+                </h1>
+            </div>
+            <!-- End Title -->
+            <div class="section-content">
+                <div class="col-xs-12">
+                    <div class="col-xs-12 articles-carousel customized-carousel customized-carousel-blue">
+                        <!-- Article -->
+                        <div class="col-md-3">
+                            <div class="mainpage-carousel-inner">
+                                <div class="mainpage-carousel-image">
+                                    <img src="~/Customer/assets/images/hostpital.jpg" alt="">
+                                </div>
+                                <div class="~/Customer/article-content">
+                                    <div class="mainpage-carousel-title">
+                                        <h5>
+                                            عنوان مقاله
+                                        </h5>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6>
+                                            دسته بندی
+                                        </h6>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6 class="~/Customer/article-date">
+                                            تاریخ انتشار:
+                                            1399/09/15
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            دیجی‌کالا به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به سه اصل، پرداخت در محل، 7 روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا موفق شده تا همگام با فروشگاه‌های معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی ایران تبدیل شود.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <button class="btn article-btn hs-main-btn">ادامه مطلب</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mainpage-carousel-inner">
+                                <div class="mainpage-carousel-image">
+                                    <img src="~/Customer/assets/images/hostpital.jpg" alt="">
+                                </div>
+                                <div class="~/Customer/article-content">
+                                    <div class="mainpage-carousel-title">
+                                        <h5>
+                                            عنوان مقاله
+                                        </h5>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6>
+                                            دسته بندی
+                                        </h6>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6 class="~/Customer/article-date">
+                                            تاریخ انتشار:
+                                            1399/09/15
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            دیجی‌کالا به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به سه اصل، پرداخت در محل، 7 روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا موفق شده تا همگام با فروشگاه‌های معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی ایران تبدیل شود.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <button class="btn article-btn hs-main-btn">ادامه مطلب</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mainpage-carousel-inner">
+                                <div class="mainpage-carousel-image">
+                                    <img src="~/Customer/assets/images/hostpital.jpg" alt="">
+                                </div>
+                                <div class="~/Customer/article-content">
+                                    <div class="mainpage-carousel-title">
+                                        <h5>
+                                            عنوان مقاله
+                                        </h5>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6>
+                                            دسته بندی
+                                        </h6>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6 class="~/Customer/article-date">
+                                            تاریخ انتشار:
+                                            1399/09/15
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            دیجی‌کالا به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به سه اصل، پرداخت در محل، 7 روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا موفق شده تا همگام با فروشگاه‌های معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی ایران تبدیل شود.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <button class="btn article-btn hs-main-btn">ادامه مطلب</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mainpage-carousel-inner">
+                                <div class="mainpage-carousel-image">
+                                    <img src="~/Customer/assets/images/hostpital.jpg" alt="">
+                                </div>
+                                <div class="~/Customer/article-content">
+                                    <div class="mainpage-carousel-title">
+                                        <h5>
+                                            عنوان مقاله
+                                        </h5>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6>
+                                            دسته بندی
+                                        </h6>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6 class="~/Customer/article-date">
+                                            تاریخ انتشار:
+                                            1399/09/15
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            دیجی‌کالا به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به سه اصل، پرداخت در محل، 7 روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا موفق شده تا همگام با فروشگاه‌های معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی ایران تبدیل شود.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <button class="btn article-btn hs-main-btn">ادامه مطلب</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mainpage-carousel-inner">
+                                <div class="mainpage-carousel-image">
+                                    <img src="~/Customer/assets/images/hostpital.jpg" alt="">
+                                </div>
+                                <div class="~/Customer/article-content">
+                                    <div class="mainpage-carousel-title">
+                                        <h5>
+                                            عنوان مقاله
+                                        </h5>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6>
+                                            دسته بندی
+                                        </h6>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6 class="~/Customer/article-date">
+                                            تاریخ انتشار:
+                                            1399/09/15
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            دیجی‌کالا به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به سه اصل، پرداخت در محل، 7 روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا موفق شده تا همگام با فروشگاه‌های معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی ایران تبدیل شود.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <button class="btn article-btn hs-main-btn">ادامه مطلب</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mainpage-carousel-inner">
+                                <div class="mainpage-carousel-image">
+                                    <img src="~/Customer/assets/images/hostpital.jpg" alt="">
+                                </div>
+                                <div class="~/Customer/article-content">
+                                    <div class="mainpage-carousel-title">
+                                        <h5>
+                                            عنوان مقاله
+                                        </h5>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6>
+                                            دسته بندی
+                                        </h6>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6 class="~/Customer/article-date">
+                                            تاریخ انتشار:
+                                            1399/09/15
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            دیجی‌کالا به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به سه اصل، پرداخت در محل، 7 روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا موفق شده تا همگام با فروشگاه‌های معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی ایران تبدیل شود.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <button class="btn article-btn hs-main-btn">ادامه مطلب</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mainpage-carousel-inner">
+                                <div class="mainpage-carousel-image">
+                                    <img src="~/Customer/assets/images/hostpital.jpg" alt="">
+                                </div>
+                                <div class="~/Customer/article-content">
+                                    <div class="mainpage-carousel-title">
+                                        <h5>
+                                            عنوان مقاله
+                                        </h5>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6>
+                                            دسته بندی
+                                        </h6>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6 class="~/Customer/article-date">
+                                            تاریخ انتشار:
+                                            1399/09/15
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            دیجی‌کالا به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به سه اصل، پرداخت در محل، 7 روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا موفق شده تا همگام با فروشگاه‌های معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی ایران تبدیل شود.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <button class="btn article-btn hs-main-btn">ادامه مطلب</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mainpage-carousel-inner">
+                                <div class="mainpage-carousel-image">
+                                    <img src="~/Customer/assets/images/hostpital.jpg" alt="">
+                                </div>
+                                <div class="~/Customer/article-content">
+                                    <div class="mainpage-carousel-title">
+                                        <h5>
+                                            عنوان مقاله
+                                        </h5>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6>
+                                            دسته بندی
+                                        </h6>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6 class="~/Customer/article-date">
+                                            تاریخ انتشار:
+                                            1399/09/15
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            دیجی‌کالا به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به سه اصل، پرداخت در محل، 7 روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا موفق شده تا همگام با فروشگاه‌های معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی ایران تبدیل شود.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <button class="btn article-btn hs-main-btn">ادامه مطلب</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mainpage-carousel-inner">
+                                <div class="mainpage-carousel-image">
+                                    <img src="~/Customer/assets/images/hostpital.jpg" alt="">
+                                </div>
+                                <div class="~/Customer/article-content">
+                                    <div class="mainpage-carousel-title">
+                                        <h5>
+                                            عنوان مقاله
+                                        </h5>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6>
+                                            دسته بندی
+                                        </h6>
+                                    </div>
+                                    <div class="mainpage-carousel-title">
+                                        <h6 class="~/Customer/article-date">
+                                            تاریخ انتشار:
+                                            1399/09/15
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            دیجی‌کالا به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به سه اصل، پرداخت در محل، 7 روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا موفق شده تا همگام با فروشگاه‌های معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی ایران تبدیل شود.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <button class="btn article-btn hs-main-btn">ادامه مطلب</button>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Article -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Section-->
+</main>

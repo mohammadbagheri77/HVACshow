@@ -1,0 +1,1140 @@
+﻿@{
+    ViewData["Title"] = "addProduct";
+    Layout = "~/Areas/Company/Views/Shared/_Layout.cshtml";
+}
+
+<div class="m-grid__item m-grid__item--fluid m-wrapper">
+
+    <!-- BEGIN: Subheader -->
+    <div class="m-subheader ">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h3 class="m-subheader__title display-inline-block ml-0 pl-0">داشبورد</h3>
+                <ul class="m-subheader__breadcrumbs m-nav m-nav--inline display-inline-block">
+                    <li class="m-nav__separator">
+                        -
+                    </li>
+                    <li class="m-nav__item">
+                        <a href="javascript:void(0)" class="m-nav__link">
+                            <span class="m-nav__link-text">
+                                محصولات
+                            </span>
+                        </a>
+                    </li>
+                    <li class="m-nav__separator">
+                        -
+                    </li>
+                    <li class="m-nav__item">
+                        <a href="" class="m-nav__link">
+                            <span class="m-nav__link-text">
+                                افزودن محصول
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span class="m-subheader__daterange">
+                    &nbsp;
+                    17 آذر
+                    &nbsp;<a href="#" class="btn btn-sm btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+                        <i class="la la-calendar"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- END: Subheader -->
+    <div class="m-content">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="m-portlet m-portlet--full-height m-portlet--tabs  ">
+                    <div class="m-portlet__head">
+                        <div class="m-portlet__head-tools">
+                            <ul class="nav nav-tabs m-tabs m-tabs-line   m-tabs-line--left m-tabs-line--primary" role="tablist">
+                                <li class="nav-item m-tabs__item">
+                                    <a class="nav-link m-tabs__link active" data-toggle="tab" href="#m_user_profile_tab_1" role="tab">
+                                        <i class="flaticon-share m--hide"></i>
+                                        <cust_title>
+                                            افزودن محصول
+                                        </cust_title>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="m-portlet__body co-setting-inner">
+                        <div class="m-portlet__head" style="height: 37px;border-bottom: none!important">
+                            <div class="m-portlet__head-tools">
+                                <ul class="nav nav-tabs m-tabs m-tabs-line   m-tabs-line--left " role="tablist">
+                                    <li class="nav-item m-tabs__item">
+                                        <a class="nav-link m-tabs__link active" data-toggle="tab" href="#m_user_profile_tab_2" role="tab">
+                                            <i class="flaticon-share m--hide"></i>
+                                            <cust_title style="font-size: 12px">
+                                                تصاویر
+                                            </cust_title>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-padding mt-4" data-target="#uploader" data-toggle="modal">
+                            <i class="flaticon-plus"></i>
+                            افزودن
+                        </button>
+                        <div class="pics-carousel">
+                            <div class="col-lg-3">
+                                <button class="btn btn-danger remove-add-product-pic"><i class="fa fa-times"></i></button>
+                                <img src="~/Company/assets/demo/default/media/img/misc/preservation-copy.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <button class="btn btn-danger remove-add-product-pic"><i class="fa fa-times"></i></button>
+                                <img src="~/Company/assets/demo/default/media/img/misc/preservation-copy.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <button class="btn btn-danger remove-add-product-pic"><i class="fa fa-times"></i></button>
+                                <img src="~/Company/assets/demo/default/media/img/misc/preservation-copy.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <button class="btn btn-danger remove-add-product-pic"><i class="fa fa-times"></i></button>
+                                <img src="~/Company/assets/demo/default/media/img/misc/preservation-copy.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <button class="btn btn-danger remove-add-product-pic"><i class="fa fa-times"></i></button>
+                                <img src="~/Company/assets/demo/default/media/img/misc/preservation-copy.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <button class="btn btn-danger remove-add-product-pic"><i class="fa fa-times"></i></button>
+                                <img src="~/Company/assets/demo/default/media/img/misc/preservation-copy.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <button class="btn btn-danger remove-add-product-pic"><i class="fa fa-times"></i></button>
+                                <img src="~/Company/assets/demo/default/media/img/misc/preservation-copy.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <button class="btn btn-danger remove-add-product-pic"><i class="fa fa-times"></i></button>
+                                <img src="~/Company/assets/demo/default/media/img/misc/preservation-copy.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group m-form__group col-md-6" style="padding: 0;">
+                                <div class="col-lg-12">
+                                    <label for="m_select2_1" class="form-control-label">گارانتی ها:</label>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding product-ga-select" id="product-ga">
+                                        <select class="form-control m-select2" id="m_select2_1" name="param" multiple>
+                                            <option value=""></option>
+                                            <option value="1">تلفن</option>
+                                            <option value="2">موبایل</option>
+                                            <option value="3">موبایل</option>
+                                            <option value="4">موبایل</option>
+                                            <option value="5">موبایل</option>
+                                            <option value="6">موبایل</option>
+                                            <option value="7">موبایل</option>
+                                            <option value="8">موبایل</option>
+                                            <option value="9">موبایل</option>
+                                            <option value="10">موبایل</option>
+                                            <option value="11">موبایل</option>
+                                            <option value="12">موبایل</option>
+                                            <option value="13">موبایل</option>
+                                            <option value="14">موبایل</option>
+                                            <option value="15">موبایل</option>
+                                        </select>
+                                        <button class="btn btn-success add-ga" data-target="#add-modal" data-toggle="modal" style="position: absolute;bottom: 0;left: 0;border-radius: .25rem 0 0 .25rem!important;height: 100%!important;padding: .45rem 1.15rem;">
+                                            افزودن
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group m-form__group col-md-6" style="padding: 0;">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label for="product-se" class="form-control-label">خدمات پس از فروش:</label>
+                                    <input type="text" id="product-se" class="form-control m-input" placeholder="" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group m-form__group col-12">
+                                <label for="prd-desc" class="form-control-label">مشخصات محصول:</label>
+                                <textarea id="prd-desc" class="form-control no-resize" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group m-form__group col-md-8" style="padding: 0;">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label for="product-name" class="form-control-label">نام محصول:</label>
+                                    <input type="text" id="product-name" class="form-control m-input" placeholder="" value="">
+                                </div>
+                            </div>
+                            <div class="form-group m-form__group col-md-4" style="padding: 0;">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 display-inline-block float-right">
+                                    <label class="form-control-label">تاریخ نمایش:</label>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 display-inline-block float-right">
+                                    <div class="row">
+                                        <div class="form-group col-sm-4 no-margin">
+                                            <button class="btn btn-default w100 h100" data-mddatetimepicker="true" data-targetselector="#input1" data-enabletimepicker="true" data-placement="left" data-trigger="click" data-englishnumber="true">انتخاب تاریخ</button>
+                                        </div>
+                                        <div class="form-group col-sm-8 no-margin">
+                                            <input type="text" class="form-control" id="input1" value="" disabled="disabled" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group m-form__group col-md-3" style="padding: 0;">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label for="m_select2_1-2" class="form-control-label">دسته بندی 1:</label>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+                                        <select class="form-control m-select2" id="m_select2_1-2" name="param">
+                                            <option value=""></option>
+                                            <option value="1">تلفن</option>
+                                            <option value="2">موبایل</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group m-form__group col-md-3" style="padding: 0;">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label for="m_select2_1-3" class="form-control-label">دسته بندی 2:</label>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+                                        <select class="form-control m-select2" id="m_select2_1-3" name="param">
+                                            <option value=""></option>
+                                            <option value="1">تلفن</option>
+                                            <option value="2">موبایل</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group m-form__group col-md-3" style="padding: 0;">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label for="m_select2_1-4" class="form-control-label">دسته بندی 3:</label>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+                                        <select class="form-control m-select2" id="m_select2_1-4" name="param">
+                                            <option value=""></option>
+                                            <option value="1">تلفن</option>
+                                            <option value="2">موبایل</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group m-form__group col-md-3" style="padding: 0;">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label for="m_select2_1-5" class="form-control-label">دسته بندی 4:</label>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+                                        <select class="form-control m-select2" id="m_select2_1-5" name="param">
+                                            <option value=""></option>
+                                            <option value="1">تلفن</option>
+                                            <option value="2">موبایل</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label for="">راهنمای خرید:</label>
+                                <div id="editor">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-portlet__head" style="height: 37px;border-bottom: none!important">
+                            <div class="m-portlet__head-tools">
+                                <ul class="nav nav-tabs m-tabs m-tabs-line   m-tabs-line--left " role="tablist">
+                                    <li class="nav-item m-tabs__item">
+                                        <a class="nav-link m-tabs__link active" data-toggle="tab" href="#m_user_profile_tab_2" role="tab">
+                                            <i class="flaticon-share m--hide"></i>
+                                            <cust_title style="font-size: 12px">
+                                                مشخصات محصول
+                                            </cust_title>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group m-form__group col-md-3" style="padding: 0;">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label for="sub-title" class="form-control-label">زیر تیتر:</label>
+                                    <input type="text" id="sub-title" class="form-control m-input" placeholder="" value="">
+                                </div>
+                            </div>
+                            <div class="form-group m-form__group col-md-3" style="padding: 0;">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label for="m_select2_1-6" class="form-control-label">بخش:</label>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+                                        <select class="form-control m-select2" id="m_select2_1-6" name="param">
+                                            <option value=""></option>
+                                            <option value="1">تلفن</option>
+                                            <option value="2">موبایل</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group m-form__group col-md-3" style="padding: 0;">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label for="m_select2_1-7" class="form-control-label">کلید:</label>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+                                        <select class="form-control m-select2" id="m_select2_1-7" name="param">
+                                            <option value=""></option>
+                                            <option value="1">تلفن</option>
+                                            <option value="2">موبایل</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group m-form__group col-md-3" style="padding: 0;">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label for="m_select2_1-8" class="form-control-label">مقدار:</label>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+                                        <select class="form-control m-select2" id="m_select2_1-8" name="param">
+                                            <option value=""></option>
+                                            <option value="1">تلفن</option>
+                                            <option value="2">موبایل</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-left">
+                                <button class="btn btn-success">
+                                    افزودن
+                                </button>
+                            </div>
+                            <table class="nres-table table table-striped table-hover m-table--head-separator-primary">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>بخش</th>
+                                        <th>کلید</th>
+                                        <th>مقدار</th>
+                                        <th>عملیات</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>بخش</td>
+                                        <td>کلید</td>
+                                        <td>مقدار</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-padding">
+                                                ویرایش
+                                            </button>
+                                            <button class="btn btn-danger btn-padding remove-kv-ap" data-target="#remove-kv-ap-modal" data-toggle="modal" data-title="کلید">
+                                                حذف
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table style="display: none;" class="res-table table table-striped table-hover m-table m-table--head-separator-primary">
+                                <tr>
+                                    <th>#</th>
+                                    <td>1</td>
+
+                                </tr>
+                                <tr>
+                                    <th>بخش</th>
+                                    <td>بخش</td>
+                                </tr>
+                                <tr>
+                                    <th>کلید</th>
+                                    <td>کلید</td>
+                                </tr>
+                                <tr>
+                                    <th>مقدار</th>
+                                    <td>مقدار</td>
+                                </tr>
+                                <tr>
+                                    <th>عملیات</th>
+                                    <td>
+                                        <button class="btn btn-primary btn-padding">
+                                            ویرایش
+                                        </button>
+                                        <button class="btn btn-danger btn-padding remove-kv-ap" data-target="#remove-kv-ap-modal" data-toggle="modal" data-title="کلید">
+                                            حذف
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="col-lg-12 mt-4 mb-4 col-xs-12 pag-par">
+                                <span class="col-xs-12">
+                                    صفحه
+                                    <span>50</span>
+                                    از
+                                    <span>170</span>
+                                </span>
+                                <ul class="tshpaglist col-xs-12">
+                                    <li class="btn btn-brand disabled">قبلی</li>
+                                    <li class="btn btn-brand active-pag">1</li>
+                                    <li class="btn btn-brand">2</li>
+                                    <li class="btn btn-brand">3</li>
+                                    <li class="btn btn-brand">4</li>
+                                    <li class="btn btn-brand">5</li>
+                                    <li class="btn btn-brand">6</li>
+                                    <li class="btn btn-brand">7</li>
+                                    <li class="btn btn-brand">8</li>
+                                    <li class="btn btn-brand">9</li>
+                                    <li class="btn btn-brand">10</li>
+                                    <li class="btn btn-brand">بعدی</li>
+                                </ul>
+                            </div>
+                            <div class="col-12 text-left dir-ltr">
+                                <button class="btn btn-success">
+                                    ثبت
+                                </button>
+                                <button class="btn btn-warning">
+                                    ویرایش
+                                </button>
+                                <button class="btn btn-danger remove-prd-btn" data-target="#remove-prd-modal" data-toggle="modal" data-title="اسم محصول">
+                                    حذف
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Disable Guarantee -->
+<div class="modal fade" id="dis-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">غیر فعال کردن گارانتی</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    آیا گارانتی
+                    <span class="rccm-title">
+
+                    </span>
+                    غیر فعال شود ؟
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">خیر</button>
+                <button type="button" class="btn btn-danger">بله</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Disable Guarantee -->
+<!-- Enable Guarantee -->
+<div class="modal fade" id="act-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">فعال کردن گارانتی</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    آیا گارانتی
+                    <span class="rccm-title">
+
+                    </span>
+                    فعال شود ؟
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">خیر</button>
+                <button type="button" class="btn btn-danger">بله</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Enable Guarantee -->
+<!-- Enable Guarantee -->
+<div class="modal fade" id="remove-ga-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">حذف کردن گارانتی</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    آیا گارانتی
+                    <span class="rccm-title">
+
+                    </span>
+                    حذف شود ؟
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">خیر</button>
+                <button type="button" class="btn btn-danger">بله</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Enable Guarantee -->
+
+<!-- Add Modal -->
+<div class="modal fade" id="add-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">گارانتی ها</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="form-group m-form__group col-md-6" style="padding: 0;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <label for="ga-name-modal" class="form-control-label">نام گارانتی:</label>
+                            <input type="text" id="ga-name-modal" class="form-control m-input" placeholder="" value="">
+                        </div>
+                    </div>
+                    <div class="form-group m-form__group col-md-6" style="padding: 0;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <label for="ga-text-modal" class="form-control-label">متن گارانتی:</label>
+                            <input type="text" id="ga-text-modal" class="form-control m-input" placeholder="" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-left no-padding">
+                    <button class="btn btn-primary">
+                        ویرایش
+                    </button>
+                    <button class="btn btn-success">
+                        افزودن
+                    </button>
+                </div>
+                <div class="m-portlet__head" style="height: 37px;border-bottom: none!important">
+                    <div class="m-portlet__head-tools">
+                        <ul class="nav nav-tabs m-tabs m-tabs-line   m-tabs-line--left " role="tablist">
+                            <li class="nav-item m-tabs__item">
+                                <a class="nav-link m-tabs__link active" data-toggle="tab" href="#m_user_profile_tab_2" role="tab">
+                                    <i class="flaticon-share m--hide"></i>
+                                    <cust_title style="font-size: 12px">
+                                        گارانتی
+                                    </cust_title>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <table class="nres-table table table-striped table-hover m-table--head-separator-primary">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>نام گارانتی</th>
+                            <th>متن گارانتی</th>
+                            <th>تعداد محصول</th>
+                            <th>تاریخ ایجاد</th>
+                            <th>عملیات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>نام گارانتی</td>
+                            <td>متن گارانتی</td>
+                            <td>32</td>
+                            <td>1399/09/08</td>
+                            <td>
+                                <div>
+                                    <div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">
+                                        <a href="#" class="m-portlet__nav-link btn m-btn--outline-2x m-btn--air m-btn--icon m-btn--icon-only m-btn--pill m-dropdown__toggle rotate-ext">
+                                            <i class="la la-plus m--hide"></i>
+                                            <i class="la la-ellipsis-h"></i>
+                                        </a>
+                                        <div class="m-dropdown__wrapper" style="z-index: 101;">
+                                            <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="right: auto; left: 21.5px;"></span>
+                                            <div class="m-dropdown__inner">
+                                                <div class="m-dropdown__body">
+                                                    <div class="m-dropdown__content">
+                                                        <ul class="m-nav ext-menu-table">
+                                                            <li class="m-nav__item">
+                                                                <a href="javascript:void(0);" class="m-nav__link dis-ga-btn" data-target="#dis-modal" data-toggle="modal" data-name="اسم گارانتی" data-dismiss="modal">
+                                                                    <i class="m-nav__link-icon flaticon-close"></i>
+                                                                    <span class="m-nav__link-text">
+                                                                        غیر فعال کردن
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <a href="javascript:void(0);" class="m-nav__link act-ga-btn" data-target="#act-modal" data-toggle="modal" data-name="اسم گارانتی" data-dismiss="modal">
+                                                                    <i class="m-nav__link-icon la la-check"></i>
+                                                                    <span class="m-nav__link-text">
+                                                                        فعال کردن
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <a href="javascript:void(0);" class="m-nav__link">
+                                                                    <i class="m-nav__link-icon flaticon-edit"></i>
+                                                                    <span class="m-nav__link-text">
+                                                                        ویرایش
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <a href="javascript:void(0);" class="m-nav__link remove-ga-btn" data-target="#remove-ga-modal" data-toggle="modal" data-name="اسم گارانتی" data-dismiss="modal">
+                                                                    <i class="m-nav__link-icon flaticon-delete"></i>
+                                                                    <span class="m-nav__link-text">
+                                                                        حذف
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="display: none;" class="res-mar-top res-table table table-striped table-hover m-table m-table--head-separator-primary">
+                    <tr>
+                        <th>#</th>
+                        <td>
+                            1
+                            <div style="display: inline-block!important;float: left;">
+                                <div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">
+                                    <a href="#" class="m-portlet__nav-link btn m-btn--outline-2x m-btn--air m-btn--icon m-btn--icon-only m-btn--pill m-dropdown__toggle rotate-ext">
+                                        <i class="la la-plus m--hide"></i>
+                                        <i class="la la-ellipsis-h"></i>
+                                    </a>
+                                    <div class="m-dropdown__wrapper" style="z-index: 101;">
+                                        <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="right: auto; left: 21.5px;"></span>
+                                        <div class="m-dropdown__inner">
+                                            <div class="m-dropdown__body">
+                                                <div class="m-dropdown__content">
+                                                    <ul class="m-nav ext-menu-table">
+                                                        <li class="m-nav__item">
+                                                            <a href="javascript:void(0);" class="m-nav__link dis-ga-btn" data-target="#dis-modal" data-toggle="modal" data-name="اسم گارانتی" data-dismiss="modal">
+                                                                <i class="m-nav__link-icon flaticon-close"></i>
+                                                                <span class="m-nav__link-text">
+                                                                    غیر فعال کردن
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-nav__item">
+                                                            <a href="javascript:void(0);" class="m-nav__link act-ga-btn" data-target="#act-modal" data-toggle="modal" data-name="اسم گارانتی" data-dismiss="modal">
+                                                                <i class="m-nav__link-icon la la-check"></i>
+                                                                <span class="m-nav__link-text">
+                                                                    فعال کردن
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-nav__item">
+                                                            <a href="javascript:void(0);" class="m-nav__link">
+                                                                <i class="m-nav__link-icon flaticon-edit"></i>
+                                                                <span class="m-nav__link-text">
+                                                                    ویرایش
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-nav__item">
+                                                            <a href="javascript:void(0);" class="m-nav__link remove-ga-btn" data-target="#remove-ga-modal" data-toggle="modal" data-name="اسم گارانتی" data-dismiss="modal">
+                                                                <i class="m-nav__link-icon flaticon-delete"></i>
+                                                                <span class="m-nav__link-text">
+                                                                    حذف
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>نام گارانتی</th>
+                        <td>نام گارانتی</td>
+                    </tr>
+                    <tr>
+                        <th>متن گارانتی</th>
+                        <td>متن گارانتی</td>
+                    </tr>
+                    <tr>
+                        <th>تعداد محصول</th>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <th>تاریخ ایجاد</th>
+                        <td>1399/09/08</td>
+                    </tr>
+                </table>
+                <div class="col-lg-12 mt-4 mb-4 col-xs-12 pag-par">
+                    <span class="col-xs-12">
+                        صفحه
+                        <span>50</span>
+                        از
+                        <span>170</span>
+                    </span>
+                    <ul class="tshpaglist col-xs-12">
+                        <li class="btn btn-brand disabled">قبلی</li>
+                        <li class="btn btn-brand active-pag">1</li>
+                        <li class="btn btn-brand">2</li>
+                        <li class="btn btn-brand">3</li>
+                        <li class="btn btn-brand">4</li>
+                        <li class="btn btn-brand">5</li>
+                        <li class="btn btn-brand">6</li>
+                        <li class="btn btn-brand">7</li>
+                        <li class="btn btn-brand">8</li>
+                        <li class="btn btn-brand">9</li>
+                        <li class="btn btn-brand">10</li>
+                        <li class="btn btn-brand">بعدی</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Add Modal -->
+<!-- Remove Modal 1 -->
+<div class="modal fade" id="remove-kv-ap-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">حذف کلید</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <span class="rccm-title">
+
+                    </span>
+                    پاک شود ؟
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">خیر</button>
+                <button type="button" class="btn btn-danger">بله</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Remove Modal 1 -->
+<!-- Remove Modal 2 -->
+<div class="modal fade" id="remove-prd-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">حذف محصول</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <span class="rccm-title">
+
+                    </span>
+                    پاک شود ؟
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">خیر</button>
+                <button type="button" class="btn btn-danger">بله</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Remove Modal 2 -->
+<!-- Uploader -->
+<div class="modal fade p-0" id="uploader" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered tshuploader-dialog" role="document">
+        <div class="modal-content tshuploader-content">
+            <div class="modal-header">
+                <h5 class="modal-title col-12">
+                    <ul class="uploader-header col-12">
+                        <li class="row">
+                        <li class="col-6">
+                            <span class="active-upload upload-btn">
+                                <i class="fa fa-upload"></i>
+                                آپلود
+                            </span>
+                        </li>
+                        <li class="col-6">
+                            <span class="gal-btn">
+                                <i class="fa fa-images"></i>
+                                گالری
+                            </span>
+                        </li>
+                        </li>
+                    </ul>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close" style="position: absolute;left: 15px;top: 25px;">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body" style="overflow-y: auto;overflow-x: hidden;">
+                <div class="upload-fields col-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="form-group m-form__group col-md-4" style="padding: 0;">
+                                <div class="col-lg-12">
+                                    <label for="nop" class="form-control-label">نام عکس:</label>
+                                    <input type="text" id="nop" name="nop" class="form-control m-input picnameUpload" placeholder="" value="">
+                                </div>
+                            </div>
+                            <div class="form-group m-form__group col-md-4" style="padding: 0;">
+                                <div class="col-lg-12">
+                                    <label for="lop" class="form-control-label">لیبل:</label>
+                                    <input type="text" id="lop" name="lop" class="form-control m-input piclabelUpload" placeholder="" value="">
+                                </div>
+                            </div>
+                            <div class="form-group m-form__group col-md-4" style="padding: 0;">
+                                <div class="col-lg-12">
+                                    <label for="tmop" class="form-control-label">توضیح مختصر:</label>
+                                    <input type="text" id="tmop" name="tmop" class="form-control m-input picdescUpload" placeholder="" value="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="upload-div col-12">
+                    <div class="col-12 float-left">
+                        <div class="col-12 float-left" style="padding-left: 0;padding-right: 0;text-align: left;">
+                            <span class="prog-bar btn btn-success" style="width: 70%">70%</span>
+                        </div>
+                    </div>
+                    <div class="gallery col-12 row"></div>
+                    <div class="col-12 dropzone-uploader">
+                        <form action="" autocomplete="off">
+                            <input type="file" class="file-selected" style="display: none;" multiple>
+                        </form>
+                        <div class="m-dropzone custom-dropzone" action="#" id="">
+                            <div class="m-dropzone__msg dz-message needsclick">
+                                <h3 class="m-dropzone__msg-title">فایل را انتخاب کنید</h3>
+                                <span class="m-dropzone__msg-desc" style="display: none;">فقط امکان انتخاب یک فایل وجود دارد</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gal-div col-12" style="display: none;height: 100%;">
+                    <div class="row" style="height: 100%;">
+                        <div class="col-lg-9 upload-right">
+                            <div class="loader-div">
+                                <div class="loader"></div>
+                            </div>
+                            <div class="col-lg-12 mb-3" style="padding-right: 0;padding-left: 0;">
+                                <label class="form-control-label">جستجو:</label>
+                                <input type="text" class="form-control m-input" placeholder="" value="" style="padding-left: 60px;">
+                                <button class="btn btn-success" style="position: absolute;bottom: 0;left: 0;border-radius: .25rem 0 0 .25rem!important;"><i class="fa fa-search"></i></button>
+                            </div>
+                            <div class="gal-img col-lg-12" style="padding: 0;float: right">
+                                <h3 class="gal-h3 h3-active">
+                                    <i class="fa fa-images"></i> عکس
+                                </h3>
+                                <div class="inner-gal row">
+                                    <div class="col-lg-3">
+                                        <div style="position: relative;">
+                                            <label class="m-checkbox m-checkbox--bold m-checkbox--state-brand" style="position: absolute;right: -8px;top: -10px;z-index: 999;">
+                                                <input type="checkbox">
+                                                <span style="background-color: white!important;"></span>
+                                            </label>
+                                            <img src="assets/demo/default/media/img/misc/user_profile_bg.jpg" class="uimg" data-name="67567نام عکس" data-label="لیبل" data-desc="توضیحات" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div style="position: relative;">
+                                            <label class="m-checkbox m-checkbox--bold m-checkbox--state-brand" style="position: absolute;right: -8px;top: -10px;z-index: 999;">
+                                                <input type="checkbox">
+                                                <span style="background-color: white!important;"></span>
+                                            </label>
+                                            <img src="assets/demo/default/media/img/misc/preservation-copy.jpg" class="uimg" data-name="67567نام عکس" data-label="لیبل" data-desc="توضیحات" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div style="position: relative;">
+                                            <label class="m-checkbox m-checkbox--bold m-checkbox--state-brand" style="position: absolute;right: -8px;top: -10px;z-index: 999;">
+                                                <input type="checkbox">
+                                                <span style="background-color: white!important;"></span>
+                                            </label>
+                                            <img src="assets/demo/default/media/img/misc/preservation-copy.jpg" class="uimg" data-name="نام ع00000000000000کس" data-label="لیبل" data-desc="توضیحات" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div style="position: relative;">
+                                            <label class="m-checkbox m-checkbox--bold m-checkbox--state-brand" style="position: absolute;right: -8px;top: -10px;z-index: 999;">
+                                                <input type="checkbox">
+                                                <span style="background-color: white!important;"></span>
+                                            </label>
+                                            <img src="assets/demo/default/media/img/misc/preservation-copy.jpg" class="uimg" data-name="نام عکس" data-label="لیبل" data-desc="توضیحات" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div style="position: relative;">
+                                            <label class="m-checkbox m-checkbox--bold m-checkbox--state-brand" style="position: absolute;right: -8px;top: -10px;z-index: 999;">
+                                                <input type="checkbox">
+                                                <span style="background-color: white!important;"></span>
+                                            </label>
+                                            <img src="assets/demo/default/media/img/misc/preservation-copy.jpg" class="uimg" data-name="نام عکس" data-label="لیبل" data-desc="توضیحات" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div style="position: relative;">
+                                            <label class="m-checkbox m-checkbox--bold m-checkbox--state-brand" style="position: absolute;right: -8px;top: -10px;z-index: 999;">
+                                                <input type="checkbox">
+                                                <span style="background-color: white!important;"></span>
+                                            </label>
+                                            <img src="assets/demo/default/media/img/misc/preservation-copy.jpg" class="uimg" data-name="نام عکس" data-label="لیبل" data-desc="توضیحات" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gal-img col-lg-12" style="padding: 0;float: right">
+                                <h3 class="gal-h3">
+                                    <i class="fa fa-video"></i> ویدیو
+                                </h3>
+                                <div class="inner-gal row" style="display: none;">
+                                    <div class="col-lg-3">
+                                        <div style="position: relative;">
+                                            <label class="m-checkbox m-checkbox--bold m-checkbox--state-brand" style="position: absolute;right: -8px;top: -10px;z-index: 999;">
+                                                <input type="checkbox">
+                                                <span style="background-color: white!important;"></span>
+                                            </label>
+                                            <img src="assets/demo/default/media/img/misc/preservation-copy.jpg" class="uimg uvideo" data-name="نام ویدیو" data-label="لیبل ویدیو" data-desc="توضیحات ویدیو" data-url="assets/demo/default/media/img/misc/slider-main.m4v" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div style="position: relative;">
+                                            <label class="m-checkbox m-checkbox--bold m-checkbox--state-brand" style="position: absolute;right: -8px;top: -10px;z-index: 999;">
+                                                <input type="checkbox">
+                                                <span style="background-color: white!important;"></span>
+                                            </label>
+                                            <img src="assets/demo/default/media/img/misc/preservation-copy.jpg" class="uimg uvideo" data-name="نام ویدیو" data-label="لیبل ویدیو" data-desc="توضیحات ویدیو" data-url="assets/demo/default/media/img/misc/slider-main.m4v" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div style="position: relative;">
+                                            <label class="m-checkbox m-checkbox--bold m-checkbox--state-brand" style="position: absolute;right: -8px;top: -10px;z-index: 999;">
+                                                <input type="checkbox">
+                                                <span style="background-color: white!important;"></span>
+                                            </label>
+                                            <img src="assets/demo/default/media/img/misc/preservation-copy.jpg" class="uimg uvideo" data-name="نام ویدیو" data-label="لیبل ویدیو" data-desc="توضیحات ویدیو" data-url="assets/demo/default/media/img/misc/slider-main.m4v" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div style="position: relative;">
+                                            <label class="m-checkbox m-checkbox--bold m-checkbox--state-brand" style="position: absolute;right: -8px;top: -10px;z-index: 999;">
+                                                <input type="checkbox">
+                                                <span style="background-color: white!important;"></span>
+                                            </label>
+                                            <img src="assets/demo/default/media/img/misc/preservation-copy.jpg" class="uimg uvideo" data-name="نام ویدیو" data-label="لیبل ویدیو" data-desc="توضیحات ویدیو" data-url="assets/demo/default/media/img/misc/slider-main.m4v" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gal-img col-lg-12" style="padding: 0;float: right">
+                                <h3 class="gal-h3">
+                                    <i class="fa fa-file"></i> فایل
+                                </h3>
+                                <div class="inner-gal row" style="display: none;">
+                                    <div class="col-lg-3">
+                                        <div style="position: relative;min-height: 130px;cursor: pointer;" class="text-center ufile" data-name="نام فایل" data-label="لیبل فایل" data-desc="توضیحات فایل" data-url="ادرس فایل">
+                                            <label class="m-checkbox m-checkbox--bold m-checkbox--state-brand" style="position: absolute;right: -8px;top: -10px;z-index: 999;">
+                                                <input type="checkbox">
+                                                <span style="background-color: white!important;"></span>
+                                            </label>
+                                            <i class="fa fa-file-pdf fa-4x mt-3"></i>
+                                            <span style="display: block;margin:8px auto 0 auto;width: 80%;">اسم فایل اسم فایل اسم فایل اسم فایل اسم فایل اسم فایل اسم فایل اسم فایل اسم فایل</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 upload-left">
+                            <div class="col-12">
+                                <div class="col-12 img-border">
+                                    <img src="assets/demo/default/media/img/misc/preservation-copy.jpg" class="left-img" alt="">
+                                    <video controls style="width: 100%;display: none">
+                                        <source src="">
+                                    </video>
+                                    <a href="">
+                                        <button class="btn btn-brand mt-1 mb-1 col-12 show-file" style="display: none;">نمایش فایل</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="form-group m-form__group col-12" style="padding: 0;">
+                                    <div class="col-lg-12">
+                                        <label class="form-control-label">نام عکس:</label>
+                                        <input type="text" class="form-control m-input picname picinps" disabled="disabled" placeholder="" value="">
+                                    </div>
+                                </div>
+                                <div class="form-group m-form__group col-12" style="padding: 0;">
+                                    <div class="col-lg-12">
+                                        <label class="form-control-label">لیبل:</label>
+                                        <input type="text" class="form-control m-input piclabel picinps" disabled="disabled" placeholder="" value="">
+                                    </div>
+                                </div>
+                                <div class="form-group m-form__group col-12" style="padding: 0;">
+                                    <div class="col-lg-12">
+                                        <label class="form-control-label">توضیح مختصر:</label>
+                                        <input type="text" class="form-control m-input picdesc picinps" disabled="disabled" placeholder="" value="">
+                                    </div>
+                                </div>
+                                <div class="form-group m-form__group col-12 btn-uploader">
+                                    <button class="btn btn-brand ubtn1">
+                                        <i class="fa fa-edit"></i>
+                                        ویرایش
+                                    </button>
+                                    <button class="btn btn-danger ubtn2 deleteimgbtn" data-target="#deleteimg" data-toggle="modal" data-name="نام عکس">
+                                        <i class="fa fa-trash"></i>
+                                        حذف
+                                    </button>
+                                    <button class="btn btn-success ubtn3" style="display: none">
+                                        <i class="fa fa-save"></i>
+                                        ذخیره
+                                    </button>
+                                    <button class="btn btn-warning ubtn4" style="display: none">
+                                        <i class="fa fa-times"></i>
+                                        انصراف
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="deleteimg" tabindex="-1" role="dialog" aria-hidden="true" style="background-color: rgba(0,0,0,.4);">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">پاک کردن فایل</h5>
+                                        <button type="button" class="close" onclick="closeDI();" aria-label="close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            <span id="data-name">
+
+                                            </span> پاک شود؟
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" onclick="closeDI();">خیر</button>
+                                        <button type="button" class="btn btn-danger">بله</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-dismiss="modal">انصراف</button>
+                <button type="button" class="btn btn-success upload-btn-footer" data-dismiss="modal">بارگذاری</button>
+                <button type="button" class="btn btn-success select-uploader" style="display: none">انتخاب</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Uploader -->
+
+
+
+
+
+
+
+
+
+@section Scripts {
+
+    <script>
+        $(document).ready(function () {
+            $(".remove-logo-pic").on("click", function () {
+                $(this).next().remove();
+                $(this).remove();
+            })
+        })
+    </script>
+
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'), {
+                // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+            })
+            .then(editor => {
+                window.editor = editor;
+            })
+            .catch(err => {
+                console.error(err.stack);
+            });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.pics-carousel').slick({
+                speed: 800,
+                infinite: false,
+                slidesToShow: 4,
+                responsive: [
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4
+                        }
+                    },
+                ]
+            });
+        })
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

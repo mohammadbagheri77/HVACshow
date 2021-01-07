@@ -1,0 +1,503 @@
+﻿@{
+    ViewData["Title"] = "compare";
+    Layout = "~/Areas/Customer/Views/Shared/_Layout.cshtml";
+}
+<main class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <!--Section-->
+    <section class="container section-white section-padding-bottom section-margin-bottom section-margin-top">
+        <div class="col-xs-12">
+            <!--Section Title-->
+            <div class="section-title">
+                <h1>
+                    مقایسه
+                </h1>
+            </div>
+            <!--End Section Title-->
+            <!--Product Bottom Section-->
+            <div class="col-xs-12 product-bottom-section-inner product-bottom-section-inner-active section-margin-top-lim">
+                <div class="col-xs-12 no-padding compare-items display-flex">
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="">
+                            <div class="mainpage-carousel-inner">
+                                <div class="mainpage-carousel-image">
+                                    <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                                </div>
+                                <div class="mainpage-carousel-content">
+                                    <div class="mainpage-carousel-title">
+                                        <h5>
+                                            کولر گازی جنرال موتور خیلی خیلی خفن
+                                        </h5>
+                                    </div>
+                                    <div class="mainpage-carousel-rating">
+                                        <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                    </div>
+                                    <div class="mainpage-carousel-company">
+                                        <img src="~/Customer/assets/images/store.png" alt="">
+                                        <span class="mainpage-carousel-company-name">
+                                            دما تجهیز
+                                        </span>
+                                        <div class="mainpage-carousel-company-rating">
+                                            <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<button type="button" class="btn custom-btn-primary col-xs-12 show-prd-btn">
+                                    مشاهده محصول
+                                </button>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="">
+                            <div class="mainpage-carousel-inner">
+                                <div class="mainpage-carousel-image">
+                                    <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                                </div>
+                                <div class="mainpage-carousel-content">
+                                    <div class="mainpage-carousel-title">
+                                        <h5>
+                                            کولر گازی جنرال موتور خیلی خیلی خفن
+                                        </h5>
+                                    </div>
+                                    <div class="mainpage-carousel-rating">
+                                        <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                    </div>
+                                    <div class="mainpage-carousel-company">
+                                        <img src="~/Customer/assets/images/store.png" alt="">
+                                        <span class="mainpage-carousel-company-name">
+                                            دما تجهیز
+                                        </span>
+                                        <div class="mainpage-carousel-company-rating">
+                                            <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<button type="button" class="btn custom-btn-primary col-xs-12 show-prd-btn">
+                                    مشاهده محصول
+                                </button>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="mainpage-carousel-inner add-compare" data-target="#compare-modal" data-toggle="modal">
+                            <div class="inner-add-compare">
+                                <i class="fal fa-plus fa-5x"></i>
+                                <p>
+                                    برای افزودن به لیست مقایسه کلیک کنید
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Product Specifications-->
+                <div class="product-spec col-xs-12 compare-div normal-padding">
+                    <span>
+                        مشخصات فیزیکی
+                    </span>
+                    <div class="col-xs-12 no-padding">
+                        <div class="col-xs-12 spec-title">
+                            <div>
+                                ابعاد
+                            </div>
+                        </div>
+                        <div class="col-xs-12 compare-detail">
+                            <div class="col-sm-3 col-xs-6">
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                                18*33
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Product Specifications-->
+            </div>
+            <!--End Product Bottom Section-->
+        </div>
+    </section>
+    <!--End Section-->
+</main>
+<!--Compare Modal-->
+<div class="modal fade" id="compare-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-center modal-lg compare-modal-content" role="document">
+        <div class="modal-content float-right">
+            <div class="modal-header">
+                <h5 class="modal-title">افزودن به مقایسه</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-xs-12">
+                    <form action="" class="compare-form" method="post" autocomplete="off">
+                        <div class="input-group col-sm-9 col-xs-7">
+                            <input type="text" class="form-control compare-search-input" placeholder="کالای مورد نظر خود را جستجو کنید...">
+                        </div>
+                        <div class="input-group col-sm-3 col-xs-5 select-border-radius">
+                            <select class="compare-brand hs-input col-xs-12">
+                                <option value="1">تمامی برند ها</option>
+                                <option value="2">ریدن به .Net</option>
+                                <option value="3">ریدن به Adobe XD</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 compare-modal-inner no-padding custom-scroll">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="mainpage-carousel-inner">
+                            <div class="mainpage-carousel-image">
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                            </div>
+                            <div class="mainpage-carousel-content">
+                                <div class="mainpage-carousel-title">
+                                    <h5>
+                                        کولر گازی جنرال موتور خیلی خیلی خفن
+                                    </h5>
+                                </div>
+                                <div class="mainpage-carousel-rating">
+                                    <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                </div>
+                                <div class="mainpage-carousel-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    <span class="mainpage-carousel-company-name">
+                                        دما تجهیز
+                                    </span>
+                                    <div class="mainpage-carousel-company-rating">
+                                        <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<button type="button" class="btn custom-btn-primary col-xs-12 show-prd-btn">
+                                مشاهده محصول
+                            </button>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="mainpage-carousel-inner">
+                            <div class="mainpage-carousel-image">
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                            </div>
+                            <div class="mainpage-carousel-content">
+                                <div class="mainpage-carousel-title">
+                                    <h5>
+                                        کولر گازی جنرال موتور خیلی خیلی خفن
+                                    </h5>
+                                </div>
+                                <div class="mainpage-carousel-rating">
+                                    <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                </div>
+                                <div class="mainpage-carousel-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    <span class="mainpage-carousel-company-name">
+                                        دما تجهیز
+                                    </span>
+                                    <div class="mainpage-carousel-company-rating">
+                                        <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<button type="button" class="btn custom-btn-primary col-xs-12 show-prd-btn">
+                                مشاهده محصول
+                            </button>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="mainpage-carousel-inner">
+                            <div class="mainpage-carousel-image">
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                            </div>
+                            <div class="mainpage-carousel-content">
+                                <div class="mainpage-carousel-title">
+                                    <h5>
+                                        کولر گازی جنرال موتور خیلی خیلی خفن
+                                    </h5>
+                                </div>
+                                <div class="mainpage-carousel-rating">
+                                    <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                </div>
+                                <div class="mainpage-carousel-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    <span class="mainpage-carousel-company-name">
+                                        دما تجهیز
+                                    </span>
+                                    <div class="mainpage-carousel-company-rating">
+                                        <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<button type="button" class="btn custom-btn-primary col-xs-12 show-prd-btn">
+                                مشاهده محصول
+                            </button>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="mainpage-carousel-inner">
+                            <div class="mainpage-carousel-image">
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                            </div>
+                            <div class="mainpage-carousel-content">
+                                <div class="mainpage-carousel-title">
+                                    <h5>
+                                        کولر گازی جنرال موتور خیلی خیلی خفن
+                                    </h5>
+                                </div>
+                                <div class="mainpage-carousel-rating">
+                                    <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                </div>
+                                <div class="mainpage-carousel-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    <span class="mainpage-carousel-company-name">
+                                        دما تجهیز
+                                    </span>
+                                    <div class="mainpage-carousel-company-rating">
+                                        <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<button type="button" class="btn custom-btn-primary col-xs-12 show-prd-btn">
+                                مشاهده محصول
+                            </button>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="mainpage-carousel-inner">
+                            <div class="mainpage-carousel-image">
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                            </div>
+                            <div class="mainpage-carousel-content">
+                                <div class="mainpage-carousel-title">
+                                    <h5>
+                                        کولر گازی جنرال موتور خیلی خیلی خفن
+                                    </h5>
+                                </div>
+                                <div class="mainpage-carousel-rating">
+                                    <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                </div>
+                                <div class="mainpage-carousel-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    <span class="mainpage-carousel-company-name">
+                                        دما تجهیز
+                                    </span>
+                                    <div class="mainpage-carousel-company-rating">
+                                        <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<button type="button" class="btn custom-btn-primary col-xs-12 show-prd-btn">
+                                مشاهده محصول
+                            </button>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="mainpage-carousel-inner">
+                            <div class="mainpage-carousel-image">
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                            </div>
+                            <div class="mainpage-carousel-content">
+                                <div class="mainpage-carousel-title">
+                                    <h5>
+                                        کولر گازی جنرال موتور خیلی خیلی خفن
+                                    </h5>
+                                </div>
+                                <div class="mainpage-carousel-rating">
+                                    <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                </div>
+                                <div class="mainpage-carousel-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    <span class="mainpage-carousel-company-name">
+                                        دما تجهیز
+                                    </span>
+                                    <div class="mainpage-carousel-company-rating">
+                                        <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<button type="button" class="btn custom-btn-primary col-xs-12 show-prd-btn">
+                                مشاهده محصول
+                            </button>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="mainpage-carousel-inner">
+                            <div class="mainpage-carousel-image">
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                            </div>
+                            <div class="mainpage-carousel-content">
+                                <div class="mainpage-carousel-title">
+                                    <h5>
+                                        کولر گازی جنرال موتور خیلی خیلی خفن
+                                    </h5>
+                                </div>
+                                <div class="mainpage-carousel-rating">
+                                    <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                </div>
+                                <div class="mainpage-carousel-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    <span class="mainpage-carousel-company-name">
+                                        دما تجهیز
+                                    </span>
+                                    <div class="mainpage-carousel-company-rating">
+                                        <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<button type="button" class="btn custom-btn-primary col-xs-12 show-prd-btn">
+                                مشاهده محصول
+                            </button>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="mainpage-carousel-inner">
+                            <div class="mainpage-carousel-image">
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                            </div>
+                            <div class="mainpage-carousel-content">
+                                <div class="mainpage-carousel-title">
+                                    <h5>
+                                        کولر گازی جنرال موتور خیلی خیلی خفن
+                                    </h5>
+                                </div>
+                                <div class="mainpage-carousel-rating">
+                                    <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                </div>
+                                <div class="mainpage-carousel-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    <span class="mainpage-carousel-company-name">
+                                        دما تجهیز
+                                    </span>
+                                    <div class="mainpage-carousel-company-rating">
+                                        <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<button type="button" class="btn custom-btn-primary col-xs-12 show-prd-btn">
+                                مشاهده محصول
+                            </button>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="mainpage-carousel-inner">
+                            <div class="mainpage-carousel-image">
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                            </div>
+                            <div class="mainpage-carousel-content">
+                                <div class="mainpage-carousel-title">
+                                    <h5>
+                                        کولر گازی جنرال موتور خیلی خیلی خفن
+                                    </h5>
+                                </div>
+                                <div class="mainpage-carousel-rating">
+                                    <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                </div>
+                                <div class="mainpage-carousel-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    <span class="mainpage-carousel-company-name">
+                                        دما تجهیز
+                                    </span>
+                                    <div class="mainpage-carousel-company-rating">
+                                        <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<button type="button" class="btn custom-btn-primary col-xs-12 show-prd-btn">
+                                مشاهده محصول
+                            </button>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="mainpage-carousel-inner">
+                            <div class="mainpage-carousel-image">
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                            </div>
+                            <div class="mainpage-carousel-content">
+                                <div class="mainpage-carousel-title">
+                                    <h5>
+                                        کولر گازی جنرال موتور خیلی خیلی خفن
+                                    </h5>
+                                </div>
+                                <div class="mainpage-carousel-rating">
+                                    <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                </div>
+                                <div class="mainpage-carousel-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    <span class="mainpage-carousel-company-name">
+                                        دما تجهیز
+                                    </span>
+                                    <div class="mainpage-carousel-company-rating">
+                                        <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<button type="button" class="btn custom-btn-primary col-xs-12 show-prd-btn">
+                                مشاهده محصول
+                            </button>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="mainpage-carousel-inner">
+                            <div class="mainpage-carousel-image">
+                                <img src="~/Customer/assets/images/product%20pic.jpg" alt="">
+                            </div>
+                            <div class="mainpage-carousel-content">
+                                <div class="mainpage-carousel-title">
+                                    <h5>
+                                        کولر گازی جنرال موتور خیلی خیلی خفن
+                                    </h5>
+                                </div>
+                                <div class="mainpage-carousel-rating">
+                                    <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                </div>
+                                <div class="mainpage-carousel-company">
+                                    <img src="~/Customer/assets/images/store.png" alt="">
+                                    <span class="mainpage-carousel-company-name">
+                                        دما تجهیز
+                                    </span>
+                                    <div class="mainpage-carousel-company-rating">
+                                        <i class="fa fa-star"></i> 4.5 <span>(25)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<button type="button" class="btn custom-btn-primary col-xs-12 show-prd-btn">
+                                مشاهده محصول
+                            </button>-->
+                        </div>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        موردی یافت نشد
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Compare Modal-->

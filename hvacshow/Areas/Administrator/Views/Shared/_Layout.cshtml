@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <title>@ViewData["Title"] - Administrator</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            <h1>Administrator  Page Master</h1>
+
+            @RenderBody()
+        </main>
+    </div>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

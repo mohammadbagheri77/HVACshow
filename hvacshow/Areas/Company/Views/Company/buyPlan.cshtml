@@ -1,0 +1,386 @@
+﻿@{
+    ViewData["Title"] = "buyPlan";
+    Layout = "~/Areas/Company/Views/Shared/_Layout.cshtml";
+}
+
+<div class="m-grid__item m-grid__item--fluid m-wrapper">
+
+    <!-- BEGIN: Subheader -->
+    <div class="m-subheader ">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h3 class="m-subheader__title display-inline-block ml-0 pl-0">داشبورد</h3>
+                <ul class="m-subheader__breadcrumbs m-nav m-nav--inline display-inline-block">
+                    <li class="m-nav__separator">
+                        -
+                    </li>
+                    <li class="m-nav__item">
+                        <a href="javascript:void(0)" class="m-nav__link">
+                            <span class="m-nav__link-text">
+                                پلن
+                            </span>
+                        </a>
+                    </li>
+                    <li class="m-nav__separator">
+                        -
+                    </li>
+                    <li class="m-nav__item">
+                        <a href="" class="m-nav__link">
+                            <span class="m-nav__link-text">
+                                خرید پلن
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span class="m-subheader__daterange">
+                    &nbsp;
+                    17 آذر
+                    &nbsp;<a href="#" class="btn btn-sm btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+                        <i class="la la-calendar"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- END: Subheader -->
+    <div class="m-content">
+        <!--begin::Portlet-->
+        <div class="m-portlet">
+            <div class="m-portlet__body m-portlet__body--no-padding">
+                <div class="m-pricing-table-2">
+                    <div class="m-pricing-table-2__head">
+                        <div class="m-pricing-table-2__title m--font-light">
+                            <h1>
+                                پلن مورد نیاز خود را انتخاب کنید
+                            </h1>
+                        </div>
+                        <div class="btn-group nav m-btn-group m-btn-group--pill m-btn-group--air" role="group">
+                            <button type="button" class="btn m-btn--pill  active m-btn--wide m-btn--uppercase m-btn--bolder" data-toggle="tab" href="#m-pricing-table_content1" role="tab" aria-expanded="true">
+                                ماهانه
+                            </button>
+                            <button type="button" class="btn m-btn--pill m-btn--wide m-btn--uppercase m-btn--bolder" data-toggle="tab" href="#m-pricing-table_content2" role="tab" aria-expanded="true">
+                                3 ماهه
+                            </button>
+                            <button type="button" class="btn m-btn--pill m-btn--wide m-btn--uppercase m-btn--bolder" data-toggle="tab" href="#m-pricing-table_content3" role="tab" aria-expanded="true">
+                                6 ماهه
+                            </button>
+                            <button type="button" class="btn m-btn--pill  m-btn--wide m-btn--uppercase m-btn--bolder" data-toggle="tab" href="#m-pricing-table_content4" role="tab" aria-expanded="false">
+                                سالانه
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tab-content plans-div">
+                        <div class="tab-pane active" id="m-pricing-table_content1" aria-expanded="false">
+                            <div class="m-pricing-table-2__content">
+                                <div class="m-pricing-table-2__container">
+                                    <div class="m-pricing-table-2__items row">
+                                        <div class="m-pricing-table-2__item col-lg-4">
+                                            <div class="m-pricing-table-2__visual">
+                                                <div class="m-pricing-table-2__hexagon"></div>
+                                                <span class="m-pricing-table-2__icon m--font-info"><i class="fa flaticon-confetti"></i></span>
+                                            </div>
+                                            <h2 class="m-pricing-table-2__subtitle">پایه</h2>
+                                            <div class="m-pricing-table-2__features">
+                                                <span>1 دامنه</span>
+                                                <span>10 کاربر</span>
+                                                <span>20 کپی</span>
+                                                <span>رایگان دارایی</span>
+                                            </div>
+                                            <span class="m-pricing-table-2__price">10000000</span>
+                                            <span class="m-pricing-table-2__label">تومان</span>
+                                            <div class="m-pricing-table-2__btn">
+                                                <button type="button" class="btn m-btn--pill  btn-info m-btn--wide m-btn--uppercase m-btn--bolder m-btn--lg">خرید</button>
+                                            </div>
+                                        </div>
+                                        <div class="m-pricing-table-2__item col-lg-4">
+                                            <div class="m-pricing-table-2__visual">
+                                                <div class="m-pricing-table-2__hexagon"></div>
+                                                <span class="m-pricing-table-2__icon m--font-info"><i class="fa  flaticon-rocket"></i></span>
+                                            </div>
+                                            <h2 class="m-pricing-table-2__subtitle">تجاری</h2>
+                                            <div class="m-pricing-table-2__features">
+                                                <span>10 دامنه</span>
+                                                <span>نامحدود کاربر</span>
+                                                <span>نامحدود کپی</span>
+                                                <span>رایگان دارایی</span>
+                                            </div>
+                                            <span class="m-pricing-table-2__price">1</span>
+                                            <span class="m-pricing-table-2__label">تومان</span>
+                                            <div class="m-pricing-table-2__btn">
+                                                <button type="button" class="btn m-btn--pill  btn-info m-btn--wide m-btn--uppercase m-btn--bolder m-btn--lg">خرید</button>
+                                            </div>
+                                        </div>
+                                        <div class="m-pricing-table-2__item col-lg-4">
+                                            <div class="m-pricing-table-2__visual">
+                                                <div class="m-pricing-table-2__hexagon"></div>
+                                                <span class="m-pricing-table-2__icon m--font-info"><i class="fa flaticon-gift"></i></span>
+                                            </div>
+                                            <h2 class="m-pricing-table-2__subtitle">سازمانی</h2>
+                                            <div class="m-pricing-table-2__features">
+                                                <span>نامحدود دامنه</span>
+                                                <span>نامحدود کاربر</span>
+                                                <span>نامحدود کپی</span>
+                                                <span>رایگان دارایی</span>
+                                            </div>
+                                            <span class="m-pricing-table-2__price">1</span>
+                                            <span class="m-pricing-table-2__label">تومان</span>
+                                            <div class="m-pricing-table-2__btn">
+                                                <button type="button" class="btn m-btn--pill  btn-info m-btn--wide m-btn--uppercase m-btn--bolder m-btn--lg">خرید</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-pricing-table-2__items row">
+                                        <div class="m-pricing-table-2__item col-lg-4">
+                                            <div class="m-pricing-table-2__visual">
+                                                <div class="m-pricing-table-2__hexagon"></div>
+                                                <span class="m-pricing-table-2__icon m--font-info"><i class="fa flaticon-confetti"></i></span>
+                                            </div>
+                                            <h2 class="m-pricing-table-2__subtitle">پایه</h2>
+                                            <div class="m-pricing-table-2__features">
+                                                <span>1 دامنه</span>
+                                                <span>10 کاربر</span>
+                                                <span>20 کپی</span>
+                                                <span>رایگان دارایی</span>
+                                            </div>
+                                            <span class="m-pricing-table-2__price">10000000</span>
+                                            <span class="m-pricing-table-2__label">تومان</span>
+                                            <div class="m-pricing-table-2__btn">
+                                                <button type="button" class="btn m-btn--pill  btn-info m-btn--wide m-btn--uppercase m-btn--bolder m-btn--lg">خرید</button>
+                                            </div>
+                                        </div>
+                                        <div class="m-pricing-table-2__item col-lg-4">
+                                            <div class="m-pricing-table-2__visual">
+                                                <div class="m-pricing-table-2__hexagon"></div>
+                                                <span class="m-pricing-table-2__icon m--font-info"><i class="fa  flaticon-rocket"></i></span>
+                                            </div>
+                                            <h2 class="m-pricing-table-2__subtitle">تجاری</h2>
+                                            <div class="m-pricing-table-2__features">
+                                                <span>10 دامنه</span>
+                                                <span>نامحدود کاربر</span>
+                                                <span>نامحدود کپی</span>
+                                                <span>رایگان دارایی</span>
+                                            </div>
+                                            <span class="m-pricing-table-2__price">1</span>
+                                            <span class="m-pricing-table-2__label">تومان</span>
+                                            <div class="m-pricing-table-2__btn">
+                                                <button type="button" class="btn m-btn--pill  btn-info m-btn--wide m-btn--uppercase m-btn--bolder m-btn--lg">خرید</button>
+                                            </div>
+                                        </div>
+                                        <div class="m-pricing-table-2__item col-lg-4">
+                                            <div class="m-pricing-table-2__visual">
+                                                <div class="m-pricing-table-2__hexagon"></div>
+                                                <span class="m-pricing-table-2__icon m--font-info"><i class="fa flaticon-gift"></i></span>
+                                            </div>
+                                            <h2 class="m-pricing-table-2__subtitle">سازمانی</h2>
+                                            <div class="m-pricing-table-2__features">
+                                                <span>نامحدود دامنه</span>
+                                                <span>نامحدود کاربر</span>
+                                                <span>نامحدود کپی</span>
+                                                <span>رایگان دارایی</span>
+                                            </div>
+                                            <span class="m-pricing-table-2__price">1</span>
+                                            <span class="m-pricing-table-2__label">تومان</span>
+                                            <div class="m-pricing-table-2__btn">
+                                                <button type="button" class="btn m-btn--pill  btn-info m-btn--wide m-btn--uppercase m-btn--bolder m-btn--lg">خرید</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="m-pricing-table_content2" aria-expanded="true">
+                            <div class="m-pricing-table-2__content">
+                                <div class="m-pricing-table-2__container">
+                                    <div class="m-pricing-table-2__items row">
+                                        <div class="m-pricing-table-2__item col-lg-4">
+                                            <div class="m-pricing-table-2__visual">
+                                                <div class="m-pricing-table-2__hexagon"></div>
+                                                <span class="m-pricing-table-2__icon m--font-info"><i class="fa flaticon-confetti"></i></span>
+                                            </div>
+                                            <h2 class="m-pricing-table-2__subtitle">پایه</h2>
+                                            <div class="m-pricing-table-2__features">
+                                                <span>1 دامنه</span>
+                                                <span>10 کاربر</span>
+                                                <span>20 کپی</span>
+                                                <span>رایگان دارایی</span>
+                                            </div>
+                                            <span class="m-pricing-table-2__price">3</span>
+                                            <span class="m-pricing-table-2__label">تومان</span>
+                                            <div class="m-pricing-table-2__btn">
+                                                <button type="button" class="btn m-btn--pill  btn-info m-btn--wide m-btn--uppercase m-btn--bolder m-btn--lg">خرید</button>
+                                            </div>
+                                        </div>
+                                        <div class="m-pricing-table-2__item col-lg-4">
+                                            <div class="m-pricing-table-2__visual">
+                                                <div class="m-pricing-table-2__hexagon"></div>
+                                                <span class="m-pricing-table-2__icon m--font-info"><i class="fa  flaticon-rocket"></i></span>
+                                            </div>
+                                            <h2 class="m-pricing-table-2__subtitle">تجاری</h2>
+                                            <div class="m-pricing-table-2__features">
+                                                <span>10 دامنه</span>
+                                                <span>نامحدود کاربر</span>
+                                                <span>نامحدود کپی</span>
+                                                <span>رایگان دارایی</span>
+                                            </div>
+                                            <span class="m-pricing-table-2__price">3</span>
+                                            <span class="m-pricing-table-2__label">تومان</span>
+                                            <div class="m-pricing-table-2__btn">
+                                                <button type="button" class="btn m-btn--pill  btn-info m-btn--wide m-btn--uppercase m-btn--bolder m-btn--lg">خرید</button>
+                                            </div>
+                                        </div>
+                                        <div class="m-pricing-table-2__item col-lg-4">
+                                            <div class="m-pricing-table-2__visual">
+                                                <div class="m-pricing-table-2__hexagon"></div>
+                                                <span class="m-pricing-table-2__icon m--font-info"><i class="fa flaticon-gift"></i></span>
+                                            </div>
+                                            <h2 class="m-pricing-table-2__subtitle">سازمانی</h2>
+                                            <div class="m-pricing-table-2__features">
+                                                <span>نامحدود دامنه</span>
+                                                <span>نامحدود کاربر</span>
+                                                <span>نامحدود کپی</span>
+                                                <span>رایگان دارایی</span>
+                                            </div>
+                                            <span class="m-pricing-table-2__price">3</span>
+                                            <span class="m-pricing-table-2__label">تومان</span>
+                                            <div class="m-pricing-table-2__btn">
+                                                <button type="button" class="btn m-btn--pill  btn-info m-btn--wide m-btn--uppercase m-btn--bolder m-btn--lg">خرید</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="m-pricing-table_content3" aria-expanded="true">
+                            <div class="m-pricing-table-2__content">
+                                <div class="m-pricing-table-2__container">
+                                    <div class="m-pricing-table-2__items row">
+                                        <div class="m-pricing-table-2__item col-lg-4">
+                                            <div class="m-pricing-table-2__visual">
+                                                <div class="m-pricing-table-2__hexagon"></div>
+                                                <span class="m-pricing-table-2__icon m--font-info"><i class="fa flaticon-confetti"></i></span>
+                                            </div>
+                                            <h2 class="m-pricing-table-2__subtitle">پایه</h2>
+                                            <div class="m-pricing-table-2__features">
+                                                <span>1 دامنه</span>
+                                                <span>10 کاربر</span>
+                                                <span>20 کپی</span>
+                                                <span>رایگان دارایی</span>
+                                            </div>
+                                            <span class="m-pricing-table-2__price">6</span>
+                                            <span class="m-pricing-table-2__label">تومان</span>
+                                            <div class="m-pricing-table-2__btn">
+                                                <button type="button" class="btn m-btn--pill  btn-info m-btn--wide m-btn--uppercase m-btn--bolder m-btn--lg">خرید</button>
+                                            </div>
+                                        </div>
+                                        <div class="m-pricing-table-2__item col-lg-4">
+                                            <div class="m-pricing-table-2__visual">
+                                                <div class="m-pricing-table-2__hexagon"></div>
+                                                <span class="m-pricing-table-2__icon m--font-info"><i class="fa  flaticon-rocket"></i></span>
+                                            </div>
+                                            <h2 class="m-pricing-table-2__subtitle">تجاری</h2>
+                                            <div class="m-pricing-table-2__features">
+                                                <span>10 دامنه</span>
+                                                <span>نامحدود کاربر</span>
+                                                <span>نامحدود کپی</span>
+                                                <span>رایگان دارایی</span>
+                                            </div>
+                                            <span class="m-pricing-table-2__price">6</span>
+                                            <span class="m-pricing-table-2__label">تومان</span>
+                                            <div class="m-pricing-table-2__btn">
+                                                <button type="button" class="btn m-btn--pill  btn-info m-btn--wide m-btn--uppercase m-btn--bolder m-btn--lg">خرید</button>
+                                            </div>
+                                        </div>
+                                        <div class="m-pricing-table-2__item col-lg-4">
+                                            <div class="m-pricing-table-2__visual">
+                                                <div class="m-pricing-table-2__hexagon"></div>
+                                                <span class="m-pricing-table-2__icon m--font-info"><i class="fa flaticon-gift"></i></span>
+                                            </div>
+                                            <h2 class="m-pricing-table-2__subtitle">سازمانی</h2>
+                                            <div class="m-pricing-table-2__features">
+                                                <span>نامحدود دامنه</span>
+                                                <span>نامحدود کاربر</span>
+                                                <span>نامحدود کپی</span>
+                                                <span>رایگان دارایی</span>
+                                            </div>
+                                            <span class="m-pricing-table-2__price">6</span>
+                                            <span class="m-pricing-table-2__label">تومان</span>
+                                            <div class="m-pricing-table-2__btn">
+                                                <button type="button" class="btn m-btn--pill  btn-info m-btn--wide m-btn--uppercase m-btn--bolder m-btn--lg">خرید</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="m-pricing-table_content4" aria-expanded="true">
+                            <div class="m-pricing-table-2__content">
+                                <div class="m-pricing-table-2__container">
+                                    <div class="m-pricing-table-2__items row">
+                                        <div class="m-pricing-table-2__item col-lg-4">
+                                            <div class="m-pricing-table-2__visual">
+                                                <div class="m-pricing-table-2__hexagon"></div>
+                                                <span class="m-pricing-table-2__icon m--font-info"><i class="fa flaticon-confetti"></i></span>
+                                            </div>
+                                            <h2 class="m-pricing-table-2__subtitle">پایه</h2>
+                                            <div class="m-pricing-table-2__features">
+                                                <span>1 دامنه</span>
+                                                <span>10 کاربر</span>
+                                                <span>20 کپی</span>
+                                                <span>رایگان دارایی</span>
+                                            </div>
+                                            <span class="m-pricing-table-2__price">12</span>
+                                            <span class="m-pricing-table-2__label">تومان</span>
+                                            <div class="m-pricing-table-2__btn">
+                                                <button type="button" class="btn m-btn--pill  btn-info m-btn--wide m-btn--uppercase m-btn--bolder m-btn--lg">خرید</button>
+                                            </div>
+                                        </div>
+                                        <div class="m-pricing-table-2__item col-lg-4">
+                                            <div class="m-pricing-table-2__visual">
+                                                <div class="m-pricing-table-2__hexagon"></div>
+                                                <span class="m-pricing-table-2__icon m--font-info"><i class="fa  flaticon-rocket"></i></span>
+                                            </div>
+                                            <h2 class="m-pricing-table-2__subtitle">تجاری</h2>
+                                            <div class="m-pricing-table-2__features">
+                                                <span>10 دامنه</span>
+                                                <span>نامحدود کاربر</span>
+                                                <span>نامحدود کپی</span>
+                                                <span>رایگان دارایی</span>
+                                            </div>
+                                            <span class="m-pricing-table-2__price">12</span>
+                                            <span class="m-pricing-table-2__label">تومان</span>
+                                            <div class="m-pricing-table-2__btn">
+                                                <button type="button" class="btn m-btn--pill  btn-info m-btn--wide m-btn--uppercase m-btn--bolder m-btn--lg">خرید</button>
+                                            </div>
+                                        </div>
+                                        <div class="m-pricing-table-2__item col-lg-4">
+                                            <div class="m-pricing-table-2__visual">
+                                                <div class="m-pricing-table-2__hexagon"></div>
+                                                <span class="m-pricing-table-2__icon m--font-info"><i class="fa flaticon-gift"></i></span>
+                                            </div>
+                                            <h2 class="m-pricing-table-2__subtitle">سازمانی</h2>
+                                            <div class="m-pricing-table-2__features">
+                                                <span>نامحدود دامنه</span>
+                                                <span>نامحدود کاربر</span>
+                                                <span>نامحدود کپی</span>
+                                                <span>رایگان دارایی</span>
+                                            </div>
+                                            <span class="m-pricing-table-2__price">12</span>
+                                            <span class="m-pricing-table-2__label">تومان</span>
+                                            <div class="m-pricing-table-2__btn">
+                                                <button type="button" class="btn m-btn--pill  btn-info m-btn--wide m-btn--uppercase m-btn--bolder m-btn--lg">خرید</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end::Portlet-->
+    </div>
+</div>
+
