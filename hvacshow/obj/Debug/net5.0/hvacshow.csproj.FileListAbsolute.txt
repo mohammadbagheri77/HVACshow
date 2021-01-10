@@ -452,6 +452,7 @@ E:\Pro_TSHP\hvac_show\hvacshow\obj\Debug\net5.0\Razor\Areas\Customer\Views\_View
 E:\Pro_TSHP\hvac_show\hvacshow\obj\Debug\net5.0\Razor\Areas\Customer\Views\_ViewStart.cshtml.g.cs
 E:\Pro_TSHP\hvac_show\hvacshow\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
 E:\Pro_TSHP\hvac_show\hvacshow\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+E:\Pro_TSHP\hvac_show\hvacshow\obj\Debug\net5.0\Razor\Views\module\Comment.cshtml.g.cs
 E:\Pro_TSHP\hvac_show\hvacshow\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 E:\Pro_TSHP\hvac_show\hvacshow\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 E:\Pro_TSHP\hvac_show\hvacshow\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs

@@ -16,6 +16,7 @@ namespace hvacshow.Models.Context
         }
 
         public DbSet<User> User { get; set; }
+        public DbSet<Comment> Comment { get; set; }
        
 
 

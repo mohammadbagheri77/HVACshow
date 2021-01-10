@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using hvacshow.Models;
+using hvacshow.Models.Context;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +11,17 @@ namespace hvacshow.Areas.Customer.Controllers
     [Area("Customer")]
     public class CustomerController : Controller
     {
+
+        private readonly AppDbContext _dbContext;
+
+        public CustomerController(AppDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
+
+
+
         public IActionResult Index()
         {
             return View();

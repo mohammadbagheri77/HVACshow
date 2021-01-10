@@ -26,6 +26,9 @@ namespace hvacshow
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
+            services.AddAntiforgery(o => o.HeaderName = "XSRF-TOKEN");
+
             services.AddControllersWithViews()
              .AddRazorRuntimeCompilation();
 
@@ -57,6 +60,8 @@ namespace hvacshow
 
             app.UseRouting();
 
+          
+
             app.UseAuthentication();
             app.UseAuthorization();
 
@@ -81,12 +86,12 @@ namespace hvacshow
 
                     name: "",
                     pattern: "{area:exists}/{controller}/{action}/");
- /* 
+                /* 
 
-                         endpoints.MapControllerRoute(
-                        name: "MyArea",
-                        pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-                */
+                                        endpoints.MapControllerRoute(
+                                       name: "MyArea",
+                                       pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                               */
 
             });
         }

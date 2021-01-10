@@ -1,0 +1,197 @@
+﻿
+@{
+    Layout = "";
+}
+
+
+<div class="modal fade" id="comments-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-center" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">ارسال نظر</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body col-xs-12">
+                <form method="post" autocomplete="off">
+                    @if ((bool)ViewData["NeedNumMobile"])
+                    {
+                        <div class="input-group col-sm-4 col-xs-12">
+                            <input id="Name" type="text" class="form-control" placeholder="نام و نام خانوادگی">
+                        </div>
+                        <div class="input-group col-sm-5 col-xs-12">
+                            <span class="input-group-addon custom-btn-danger res-transform-send-code" onclick="commentCodeSent()">ارسال کد تایید</span>
+                            <input id="NumMobile" type="text" class="form-control" placeholder="شماره تماس" maxlength="11" onkeypress="return /^-?[0-9]*$/.test(this.value+event.key)">
+                        </div>
+                        <div class="input-group col-sm-3 col-xs-12" style="margin-top: 0!important;margin-bottom: 0!important;">
+                            <input id="CodeMobile" type="text" class="form-control comment-code" placeholder="کد تایید" style="display: none">
+                        </div>
+                    }
+                    <div class="col-xs-6 modal-body-bottom float-right">
+                        <span class="custom-checkbox">
+                            <input type="checkbox" id="checkbox" class="have-product" />
+                            <label for="checkbox"></label>
+                        </span>
+                        <span class="have-product-text">
+                            محصول را دارم
+                        </span>
+                    </div>
+                    <div class="col-xs-6 comment-rating-div modal-body-bottom text-left float-left">
+                        <div id="s-rate" class="comment-rating select-rate">
+                            <i class="fa fa-star-o star1"></i>
+                            <i class="fa fa-star-o star2"></i>
+                            <i class="fa fa-star-o star3"></i>
+                            <i class="fa fa-star-o star4"></i>
+                            <i class="fa fa-star-o star5"></i>
+                            <span class="your-rating">
+                                امتیاز شما:
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <textarea id="Description" class="form-control custom-textarea" placeholder="نظر شما..."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div id="massege" style="color: red;margin-right: 2%;"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn custom-btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn custom-btn-primary" onclick="sendComment()">ارسال</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function sendComment() {
+
+        var CodeMobile = $("#CodeMobile").val();
+        
+
+        var srate = document.getElementById("s-rate");
+        var Rate = srate.getElementsByClassName("fa-star").length;
+
+        var Description = $("#Description").val();
+
+        if (CodeMobile == '') {
+
+            $("#massege").html("* کد موبایل");
+            return false;
+        }
+        if (Rate == '') {
+
+            $("#massege").html("* امتیاز به محصول");
+            return false;
+        }
+
+        var PostJson = {
+            'CodeMobile': CodeMobile,
+            'Rate': Rate,
+            'Description': Description
+        };
+
+        var AddressToSend = "/module/Comment";
+
+        $.ajax({
+            url: AddressToSend,
+            type: "post",
+            data: PostJson,
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader("XSRF-TOKEN",
+                    $('input:hidden[name="__RequestVerificationToken"]').val());
+            },
+            success: function (res) {
+                if (res !='seve') {
+                    $("#massege").html(res);
+                }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert(textStatus);
+            }
+        });
+        return false;
+    }
+
+    function commentCodeSent() {
+
+        var Mobile = $("#NumMobile").val();
+        var Name = $("#Name").val();
+
+        if (Mobile == '') {
+
+            $("#massege").html("* نام یا شماره موبایل");
+            return false;
+        }
+        if (Name == '') {
+
+            $("#massege").html("* نام یا شماره موبایل");
+            return false;
+        }
+
+
+        var PostJson = {
+            'Mobile': Mobile,
+            'Name': Name
+        };
+
+        var AddressToSend = "/module/CodeMobile";
+
+        $.ajax({
+            url: AddressToSend,
+            type: "post",
+            data: PostJson,
+            success: function (response) {
+                $(".comment-code").fadeIn(500);
+                $("#massege").html(" ");
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert(textStatus);
+            }
+        });
+
+
+
+
+        return false;
+    }
+
+
+    $(".select-rate i").click(function () {
+        if ($(this).hasClass("star1")) {
+            $(".select-rate .fa").addClass("fa-star-o").removeClass("fa-star");
+            $(this).addClass("fa-star").removeClass("fa-star-o");
+        } else if ($(this).hasClass("star2")) {
+            $(".select-rate .fa").addClass("fa-star-o").removeClass("fa-star");
+            $(this).addClass("fa-star").removeClass("fa-star-o");
+            $(this).prev().addClass("fa-star").removeClass("fa-star-o");
+        } else if ($(this).hasClass("star3")) {
+            $(".select-rate .fa").addClass("fa-star-o").removeClass("fa-star");
+            $(this).addClass("fa-star").removeClass("fa-star-o");
+            $(this).prev().addClass("fa-star").removeClass("fa-star-o");
+            $(this).prev().prev().addClass("fa-star").removeClass("fa-star-o");
+        } else if ($(this).hasClass("star4")) {
+            $(".select-rate .fa").addClass("fa-star-o").removeClass("fa-star");
+            $(this).addClass("fa-star").removeClass("fa-star-o");
+            $(this).prev().addClass("fa-star").removeClass("fa-star-o");
+            $(this).prev().prev().addClass("fa-star").removeClass("fa-star-o");
+            $(this).prev().prev().prev().addClass("fa-star").removeClass("fa-star-o");
+        } else if ($(this).hasClass("star5")) {
+            $(".select-rate .fa").addClass("fa-star-o").removeClass("fa-star");
+            $(this).addClass("fa-star").removeClass("fa-star-o");
+            $(this).prev().addClass("fa-star").removeClass("fa-star-o");
+            $(this).prev().prev().addClass("fa-star").removeClass("fa-star-o");
+            $(this).prev().prev().prev().addClass("fa-star").removeClass("fa-star-o");
+            $(this).prev().prev().prev().prev().addClass("fa-star").removeClass("fa-star-o");
+        }
+    })
+
+    $(".have-product").on("click", function () {
+        if ($(this).is(':checked')) {
+            $(".comment-rating").fadeIn(500);
+        } else {
+            $(".comment-rating").fadeOut(500);
+        }
+    })
+</script>

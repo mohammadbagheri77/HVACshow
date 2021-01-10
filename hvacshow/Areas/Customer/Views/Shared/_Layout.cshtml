@@ -134,7 +134,7 @@
                     <div class="col-lg-6 col-md-6 header-button">
                         <a asp-controller="Account" asp-action="Login">
                             <button>    ورود | عضویت </button>
-                           
+
                         </a>
                     </div>
                 </div>
@@ -334,5 +334,7 @@
     <script src="~/Customer/assets/js/light.js"></script>
     <script src="~/Customer/assets/js/fontawesome.min.js"></script>
     <script src="~/Customer/assets/js/script.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

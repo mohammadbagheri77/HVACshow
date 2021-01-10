@@ -566,3 +566,68 @@
     </section>
     <!--End Section-->
 </main>
+
+
+
+<!--Question Modal-->
+<div class="modal fade" id="question-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-center" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">افزودن پرسش</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body col-xs-12">
+                <form action="" method="post" autocomplete="off">
+                    <div class="input-group col-sm-4 col-xs-12">
+                        <input type="text" class="form-control" placeholder="نام و نام خانوادگی">
+                    </div>
+                    <div class="input-group col-sm-5 col-xs-12">
+                        <span class="input-group-addon custom-btn-danger res-transform-send-code">ارسال کد تایید</span>
+                        <input type="text" class="form-control" placeholder="شماره تماس">
+                    </div>
+                    <div class="input-group col-sm-3 col-xs-12" style="margin-top: 0!important;margin-bottom: 0!important;">
+                        <input type="text" class="form-control question-code" placeholder="کد تایید" style="display: none">
+                    </div>
+                    <div class="input-group col-xs-12 question-subject">
+                        <input type="text" class="form-control" placeholder="موضوع">
+                    </div>
+                    <div class="col-xs-12">
+                        <textarea class="form-control custom-textarea question-textarea" placeholder="توضیحات"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn custom-btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn custom-btn-primary">افزودن</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Question Modal-->
+<!--Comments Modal-->
+<div id="comment_show">
+
+
+
+</div>
+<!--End Comments Modal-->
+
+@section Scripts{
+
+
+    <script>
+
+        $(document).ready(function () {
+
+
+            $("#comment_show").load('/module/Comment?HasProduct=1&UserType=2&UserID=0&CommentTypeID=4&ConnectTo=5');
+
+        });
+
+    </script>
+
+
+}
